@@ -4,11 +4,17 @@
   "description": "\"# Hello VuePress!\"",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev website",
+    "build": "vuepress build website",
+    "push": "git add * && git commit -am 0 && git push origin"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.0.1"
   }
 }
