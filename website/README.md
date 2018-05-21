@@ -1,20 +1,34 @@
 ---
 home: true
 heroImage: /hero.png
-actionText: 欢迎来到小昱个人网站
-actionLink: /docs/single/welcome
+actionText: Get Started →
+actionLink: /guide/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+- title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+- title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-{{ $page }}
+### As Easy as 1, 2, 3
 
-::: v-pre
-`{{ This will be displayed as-is }}`
+``` bash
+# install
+yarn global add vuepress # OR npm install -g vuepress
+
+# create a markdown file
+echo '# Hello VuePress' > README.md
+
+# start writing
+vuepress dev
+
+# build to static files
+vuepress build
+```
+
+::: warning COMPATIBILITY NOTE
+VuePress requires Node.js >= 8.
 :::

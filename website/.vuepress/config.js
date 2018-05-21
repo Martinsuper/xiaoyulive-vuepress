@@ -1,13 +1,18 @@
 const path = require('path')
 
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
-  dest: 'disti',
+  dest: 'dist',
   configureWebpack: {
     resolve: {
       alias: {
-        '@': path.resolve('static')
+        '@': resolve('../static'),
+        '@app': resolve('lib/app')
       }
     }
   }
