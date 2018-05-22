@@ -63,6 +63,9 @@ export default {
       margin-top -1px
       margin-left 0.4rem
   .nav-dropdown
+    background-color #fff
+    border-radius 4px
+    margin-right 1em
     .dropdown-item
       color inherit
       line-height 1.7rem
@@ -83,6 +86,7 @@ export default {
         font-weight 400
         margin-bottom 0
         padding 0 1.5rem 0 1.25rem
+        color $textColor
         &:hover
           color $accentColor
         &.router-link-active
