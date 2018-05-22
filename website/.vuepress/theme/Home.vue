@@ -1,26 +1,18 @@
-<template>
-  <div class="home">
-    <div class="hero">
-      <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
-      <h1>{{ data.heroText || $title || 'Hello' }}</h1>
-      <p class="description">
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>
-      <p class="action" v-if="data.actionText && data.actionLink">
-        <NavLink class="action-button" :item="actionLink"/>
-      </p>
-    </div>
-    <div class="features" v-if="data.features && data.features.length">
-      <div class="feature" v-for="feature in data.features">
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
-      </div>
-    </div>
-    <Content custom/>
-    <div class="footer" v-if="data.footer">
-      {{ data.footer }}
-    </div>
-  </div>
+<template lang='pug'>
+  .home
+    .title
+      img(v-if="data.titleImage" :src="$withBase(data.titleImage)" alt="title")
+      h1 {{ data.title || $title }}
+      p.description {{ data.description || $description || 'Welcome to your xiaoyulive.top' }}
+      .action(v-if="data.actionText && data.actionLink")
+        NavLink.action-button(:item="actionLink")
+    .features(v-if="data.features && data.features.length")
+      .feature(v-for="feature in data.features")
+        h2 {{ feature.title }}
+        p {{ feature.details }}
+    Content(custom)
+    .footers(v-if="data.footers && data.footers.length")
+      p(v-for='footer in data.footers') {{ footer }}
 </template>
 
 <script>
@@ -49,7 +41,7 @@ export default {
   padding $navbarHeight 2rem 0
   max-width 960px
   margin 0px auto
-  .hero
+  .title
     text-align center
     img
       max-height 280px
@@ -60,7 +52,6 @@ export default {
     h1, .description, .action
       margin 1.8rem auto
     .description
-      max-width 35rem
       font-size 1.6rem
       line-height 1.3
       color lighten($textColor, 40%)
@@ -97,7 +88,7 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
-  .footer
+  .footers
     padding 2.5rem
     border-top 1px solid $borderColor
     text-align center
@@ -115,7 +106,7 @@ export default {
   .home
     padding-left 1.5rem
     padding-right 1.5rem
-    .hero
+    .title
       img
         max-height 210px
         margin 2rem auto 1.2rem

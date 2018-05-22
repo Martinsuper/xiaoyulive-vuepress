@@ -1,23 +1,15 @@
-<template>
-  <nav class="nav-links" v-if="userLinks.length || repoLink">
-    <!-- user links -->
-    <div
-      class="nav-item"
-      v-for="item in userLinks"
-      :key="item.link">
-      <DropdownLink v-if="item.type === 'links'" :item="item"/>
-      <NavLink v-else :item="item"/>
-    </div>
-    <!-- repo link -->
-    <a v-if="repoLink"
+<template lang="pug">
+  nav.nav-links(v-if="userLinks.length || repoLink")
+    .nav-item(v-for="item in userLinks" :key="item.link")
+      DropdownLink(v-if="item.type === 'links'" :item="item")
+      NavLink(v-else :item="item")
+    a.repo-link(
+      v-if="repoLink"
       :href="repoLink"
-      class="repo-link"
       target="_blank"
-      rel="noopener noreferrer">
-      {{ repoLabel }}
-      <OutboundLink/>
-    </a>
-  </nav>
+      rel="noopener noreferrer"
+    ) {{ repoLabel }}
+      OutboundLink
 </template>
 
 <script>
@@ -105,9 +97,7 @@ export default {
   display inline-block
   a
     line-height 1.4rem
-    color inherit
-    &:hover, &.router-link-active
-      color $accentColor
+    color $navTextColor
   .nav-item
     cursor pointer
     position relative
@@ -123,11 +113,22 @@ export default {
       margin-left 0
 
 @media (min-width: $MQMobile)
-  .nav-links a
-    &:hover, &.router-link-active
-      color $textColor
   .nav-item > a
+    position relative
+    cursor: pointer
+    &::after
+      content ''
+      position absolute
+      width 0
+      left: 50%;
+      height: 100%
+      border-bottom: 2px solid lighten($accentColor, 8%)
+      transition all .4s ease
+      transform translateX(-50%)
     &:hover, &.router-link-active
-      margin-bottom -2px
-      border-bottom 2px solid lighten($accentColor, 8%)
+      &::after
+        width: 100%;
+        transition-delay: 0.1s;
+      // margin-bottom -2px
+      // border-bottom 2px solid lighten($accentColor, 8%)
 </style>

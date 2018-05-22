@@ -1,6 +1,6 @@
-<template>
-  <div class="search-box">
-    <input
+<template lang="pug">
+  .search-box
+    input(
       @input="query = $event.target.value"
       aria-label="Search"
       :value="query"
@@ -10,22 +10,20 @@
       @blur="focused = false"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
-      @keyup.down="onDown">
-    <ul class="suggestions"
+      @keyup.down="onDown"
+    )
+    ul.suggestions(
       v-if="showSuggestions"
       :class="{ 'align-right': alignRight }"
-      @mouseleave="unfocus">
-      <li class="suggestion" v-for="(s, i) in suggestions"
-        :class="{ focused: i === focusIndex }"
-        @mousedown="go(i)"
-        @mouseenter="focus(i)">
-        <a :href="s.path" @click.prevent>
-          <span class="page-title">{{ s.title || s.path }}</span>
-          <span v-if="s.header" class="header">&gt; {{ s.header.title }}</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+      @mouseleave="unfocus"
+    ): li.suggestion(
+      v-for="(s, i) in suggestions"
+      :class="{ focused: i === focusIndex }"
+      @mousedown="go(i)"
+      @mouseenter="focus(i)"
+    ): a(:href="s.path" @click.prevent)
+      span.page-title {{ s.title || s.path }}
+      span.header(v-if="s.header") &gt; {{ s.header.title }}
 </template>
 
 <script>
@@ -138,7 +136,7 @@ export default {
 .search-box
   display inline-block
   position relative
-  margin-right 0.5rem
+  margin-left 1rem
   input
     cursor text
     width 10rem
