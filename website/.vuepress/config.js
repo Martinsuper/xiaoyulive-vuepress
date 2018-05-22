@@ -38,7 +38,7 @@ module.exports = {
     locales: {
       '/': {
         nav: [
-          { text: '文章', link: 'docs/articles/index', },
+          { text: '文章', link: '/docs/articles/index', },
           { text: '书籍', link: 'https://www.kancloud.cn/@xiaoyulive' },
           { text: '博客', link: 'http://blog.xiaoyulive.top/' },
           { text: 'GitHub', link: 'https://github.com/quanzaiyu' }
