@@ -81,6 +81,7 @@ function resolveOpenGroupIndex (route, items) {
     display none
     border-bottom 1px solid $borderColor
     padding 0.5rem 0 0.75rem 0
+    background-color $navBgColor
     a
       font-weight 600
     .nav-item, .repo-link
