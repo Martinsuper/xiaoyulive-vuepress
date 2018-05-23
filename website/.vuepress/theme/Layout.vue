@@ -1,23 +1,20 @@
-<template>
-  <div class="theme-container"
+<template lang="pug">
+  .theme-container(
     :class="pageClasses"
     @touchstart="onTouchStart"
-    @touchend="onTouchEnd">
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-    <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
-    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
-      <slot name="sidebar-top" slot="top"/>
-      <slot name="sidebar-bottom" slot="bottom"/>
-    </Sidebar>
-    <div class="custom-layout" v-if="$page.frontmatter.layout">
-      <component :is="$page.frontmatter.layout"/>
-    </div>
-    <Home v-else-if="$page.frontmatter.home"/>
-    <Page v-else :sidebar-items="sidebarItems">
-      <slot name="page-top" slot="top"/>
-      <slot name="page-bottom" slot="bottom"/>
-    </Page>
-  </div>
+    @touchend="onTouchEnd"
+  )
+    Navbar(v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar")
+    .sidebar-mask(@click="toggleSidebar(false)")
+    Sidebar(:items="sidebarItems" @toggle-sidebar="toggleSidebar")
+      slot(name="sidebar-top" slot="top")
+      slot(name="sidebar-bottom" slot="bottom")
+    .custom-layout(v-if="$page.frontmatter.layout")
+      component(:is="$page.frontmatter.layout")
+    Home(v-else-if="$page.frontmatter.home")
+    Page(v-else :sidebar-items="sidebarItems")
+      slot(name="page-top" slot="top")
+      slot(name="page-bottom" slot="bottom")
 </template>
 
 <script>
@@ -27,13 +24,14 @@ import Home from './Home.vue'
 import Navbar from './Navbar.vue'
 import Page from './Page.vue'
 import Sidebar from './Sidebar.vue'
+import Category from './partical/Category'
 import { pathToComponentName } from '@app/util'
 import store from '@app/store'
 import { resolveSidebarItems } from './util'
 import throttle from 'lodash.throttle'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar, Category },
   data () {
     return {
       isSidebarOpen: false

@@ -25,26 +25,34 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#f1f1f1' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
-    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['link', { rel: 'manifest', href: '/manifest.json' }]
   ],
   themeConfig: {
     locales: {
       '/': {
         nav: [
-          { text: '所有文章', link: '/articles/' },
-          { text: '分类', link: '/category/' },
+          { text: '生活漫谈', link: '/articles/' },
+          { text: '技术宅', link: '/technology/' },
+          { text: '收藏夹', link: '/favorite/' },
+          // { text: '测试', link: '/test/' },
           { text: '书籍', link: 'https://www.kancloud.cn/@xiaoyulive' },
           { text: '博客', link: 'http://blog.xiaoyulive.top/' },
           { text: 'GitHub', link: 'https://github.com/quanzaiyu' }
-        ]
+        ],
+        sidebar: {
+          '/test/': [
+            {
+              title: '测试',
+              collapsable: false,
+              children: [
+                ['aaa/c', 'Explicit link text a'],
+                ['aaa/bbb/d', 'Explicit link text b']
+              ]
+            }
+          ]
+        }
       }
     }
   }
 }
+

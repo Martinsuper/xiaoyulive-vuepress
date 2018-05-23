@@ -28,6 +28,7 @@ export function isTel (path) {
   return /^tel:/.test(path)
 }
 
+// 解析文档路径，添加 html 后缀
 export function ensureExt (path) {
   if (isExternal(path)) {
     return path
