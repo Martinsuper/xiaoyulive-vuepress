@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    h1.title 技术分类
+    h1.title {{data.title}}
     .categories
       .category(v-for='category in data.categoriesData' v-if='category.show')
         h2.category-title {{category.title}}
@@ -54,11 +54,6 @@ export default {
   computed: {
     data () {
       return this.$page.frontmatter
-    }
-  },
-  methods: {
-    $ensureExt (path) {
-      return ensureExt(path)
     }
   }
 }

@@ -1,5 +1,3 @@
-import Vue from 'vue'
-
 const requireComponent = require.context(
   '.', true, /\.vue$/
 )

@@ -28,6 +28,7 @@ import { resolveSidebarItems } from './util'
 import throttle from 'lodash.throttle'
 import particals from './partical'
 import layouts from './layouts'
+import util from './util'
 
 export default {
   data () {
@@ -92,6 +93,7 @@ export default {
   beforeCreate () {
     Vue.use(particals)
     Vue.use(layouts)
+    Vue.use(util)
   },
   created () {
     if (this.$ssrContext) {

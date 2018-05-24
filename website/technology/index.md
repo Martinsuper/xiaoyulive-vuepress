@@ -1,7 +1,6 @@
 ---
-sidebar: auto
-sidebarDepth: 0
 layout: Category
+title: 学无止境
 categoriesData:
 - title: 前端开发
   show: true

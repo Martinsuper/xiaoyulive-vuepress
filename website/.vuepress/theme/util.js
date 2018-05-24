@@ -2,6 +2,7 @@ export const hashRE = /#.*$/
 export const extRE = /\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^(https?:|mailto:|tel:)/
+import Vue from 'vue'
 
 export function normalize (path) {
   return path
@@ -212,5 +213,17 @@ function resolveItem (item, pages, base, isNested) {
       children: children.map(child => resolveItem(child, pages, base, true)),
       collapsable: item.collapsable !== false
     }
+  }
+}
+
+export default {
+  installArr: [{
+    name: '$ensureExt',
+    func: ensureExt
+  }],
+  install: function (_Vue) {
+    this.installArr.forEach(item => {
+      _Vue.prototype[item.name] = item.func
+    })
   }
 }
