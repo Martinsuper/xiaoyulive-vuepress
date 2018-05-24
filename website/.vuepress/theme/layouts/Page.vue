@@ -28,11 +28,9 @@
 </template>
 
 <script>
-import OutboundLink from './OutboundLink.vue'
-import { resolvePage, normalize, outboundRE, endingSlashRE } from './util'
+import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
 
 export default {
-  components: { OutboundLink },
   props: ['sidebarItems'],
   computed: {
     lastUpdated () {
@@ -137,7 +135,7 @@ function find (page, items, offset) {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
+@import '../styles/config.styl'
 
 .page
   padding-bottom 2rem

@@ -17,13 +17,9 @@
 </template>
 
 <script>
-import SidebarLink from './SidebarLink.vue'
-import DropdownTransition from './DropdownTransition.vue'
-
 export default {
   name: 'SidebarGroup',
-  props: ['item', 'first', 'open', 'collapsable'],
-  components: { SidebarLink, DropdownTransition }
+  props: ['item', 'first', 'open', 'collapsable']
 }
 </script>
 

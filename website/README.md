@@ -18,9 +18,6 @@ features:
   details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
 - title: Performant
   details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footers:
-  - MIT Licensed | Copyright © 2018-present  滇ICP备16006294号
-  - Design by Quanzaiyu | Power by VuePress
 ---
 
 

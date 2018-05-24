@@ -18,13 +18,7 @@
 </template>
 
 <script>
-import SidebarButton from './SidebarButton.vue'
-import AlgoliaSearchBox from '@AlgoliaSearchBox'
-import SearchBox from './SearchBox.vue'
-import NavLinks from './NavLinks.vue'
-
 export default {
-  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
   computed: {
     algolia () {
       return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
@@ -37,7 +31,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
+@import '../styles/config.styl'
 
 .navbar
   padding 0.7rem 1.5rem

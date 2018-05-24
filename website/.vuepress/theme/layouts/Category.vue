@@ -2,10 +2,10 @@
   .container
     h1.title 技术分类
     .categories
-      .category(v-for='category in data.categoriesData')
+      .category(v-for='category in data.categoriesData' v-if='category.show')
         h2.category-title {{category.title}}
         .children
-          .child(v-for='item in category.children')
+          .child(v-for='item in category.children' v-if='item.show')
             .child-name
               a(:href='$ensureExt(item.link)')
                 .img: img(:src='$withBase(item.img)' v-if='item.img')

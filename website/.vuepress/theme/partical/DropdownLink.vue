@@ -27,11 +27,8 @@
 </template>
 
 <script>
-import NavLink from './NavLink.vue'
-import DropdownTransition from './DropdownTransition.vue'
 
 export default {
-  components: { NavLink, DropdownTransition },
   data () {
     return {
       open: false
@@ -51,7 +48,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
+@import '../styles/config.styl'
 
 .dropdown-wrapper
   .dropdown-title

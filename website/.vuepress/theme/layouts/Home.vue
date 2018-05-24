@@ -4,22 +4,17 @@
       img(v-if="data.titleImage" :src="$withBase(data.titleImage)" alt="title")
       h1 {{ data.title || $title }}
       p.description {{ data.description || $description || 'Welcome to your xiaoyulive.top' }}
-      .action(v-if="data.actionText && data.actionLink")
+      .action(v-if="data.actionText && data.actionLink && false")
         NavLink.action-button(:item="actionLink")
     .features(v-if="data.features && data.features.length")
       .feature(v-for="feature in data.features")
         h2 {{ feature.title }}
         p {{ feature.details }}
     Content(custom)
-    .footers(v-if="data.footers && data.footers.length")
-      p(v-for='footer in data.footers') {{ footer }}
 </template>
 
 <script>
-import NavLink from './NavLink.vue'
-
 export default {
-  components: { NavLink },
   computed: {
     data () {
       return this.$page.frontmatter
@@ -35,7 +30,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
+@import '../styles/config.styl'
 
 .home
   padding $navbarHeight 2rem 0
@@ -88,11 +83,6 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
-  .footers
-    padding 2.5rem
-    border-top 1px solid $borderColor
-    text-align center
-    color lighten($textColor, 25%)
 
 @media (max-width: $MQMobile)
   .home

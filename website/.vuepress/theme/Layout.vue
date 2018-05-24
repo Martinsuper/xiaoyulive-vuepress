@@ -15,25 +15,29 @@
     Page(v-else :sidebar-items="sidebarItems")
       slot(name="page-top" slot="top")
       slot(name="page-bottom" slot="bottom")
+    .footers(v-if="data.footers && data.footers.length")
+      p(v-for='footer in data.footers') {{ footer }}
 </template>
 
 <script>
 import Vue from 'vue'
 import nprogress from 'nprogress'
-import Home from './Home.vue'
-import Navbar from './Navbar.vue'
-import Page from './Page.vue'
-import Sidebar from './Sidebar.vue'
-import Category from './partical/Category'
 import { pathToComponentName } from '@app/util'
 import store from '@app/store'
 import { resolveSidebarItems } from './util'
 import throttle from 'lodash.throttle'
+import particals from './partical'
+import layouts from './layouts'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar, Category },
   data () {
     return {
+      data: {
+        footers: [
+          'MIT Licensed | Copyright © 2018-present  滇ICP备16006294号',
+          'Design by Quanzaiyu | Power by VuePress'
+        ]
+      },
       isSidebarOpen: false
     }
   },
@@ -85,6 +89,10 @@ export default {
     }
   },
 
+  beforeCreate () {
+    Vue.use(particals)
+    Vue.use(layouts)
+  },
   created () {
     if (this.$ssrContext) {
       this.$ssrContext.title = this.$title
@@ -211,3 +219,11 @@ function updateMetaTags (meta, current) {
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>
+<style lang="stylus" scoped>
+@import './styles/config.styl'
+.footers
+  padding 2.5rem
+  border-top 1px solid $borderColor
+  text-align center
+  color lighten($textColor, 25%)
+</style>
