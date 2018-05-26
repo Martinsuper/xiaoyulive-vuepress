@@ -36,7 +36,6 @@ export default {
 .navbar
   padding 0.7rem 1.5rem
   line-height $navbarHeight - 1.4rem
-  position relative
   .navbar-content
     width $navWidth
     margin 0 auto
