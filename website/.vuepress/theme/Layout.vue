@@ -224,8 +224,11 @@ function updateMetaTags (meta, current) {
 <style lang="stylus" scoped>
 @import './styles/config.styl'
 .footers
+  position relative
+  z-index 20
+  background-color $navBgColor
   padding 2.5rem
   border-top 1px solid $borderColor
   text-align center
-  color lighten($textColor, 25%)
+  color $navTextColor
 </style>

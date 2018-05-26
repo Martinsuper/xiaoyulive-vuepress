@@ -6,6 +6,8 @@ sidebarDepth: 2
 
 # 优质的 Markdown-It 插件
 
+## 前言
+
 初识 markdown-it，是在 VuePress 中。
 
 以前特别想自己定制 Markdown 的解析，试过 [marked.js](https://www.npmjs.com/package/marked)[^1]，但是功能较少，局限性很大，也不容易扩展。

@@ -68,6 +68,7 @@ export default {
 
 @media (max-width: $navWidth + 200px)
   .navbar
+    z-index 40
     .navbar-content
       width 100%
       display block

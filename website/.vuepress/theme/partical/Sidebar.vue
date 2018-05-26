@@ -90,6 +90,7 @@ function resolveOpenGroupIndex (route, items) {
 
 @media (max-width: $MQMobile)
   .sidebar
+    z-index 30
     .nav-links
       display block
     .sidebar-links

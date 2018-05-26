@@ -1,0 +1,474 @@
+---
+sidebar: auto
+sidebarDepth: 2
+---
+
+# 优质的 VSCode 插件
+
+## 前言
+
+在我的编程生涯中，尝试过很多编辑器、IDE，有很多是非常不错的，不过随着技术的飞速发展，新的工具层出不穷，慢慢的，很多与我相伴多年的工具从我的生命中慢慢淡去，不是不好，而是这已成为我尘封与记忆之中一段难忘的经历，像一瓶老酒，回想起来滋味万千。
+
+从最初的 editPlus，里面支持语法高亮，当时还在学习静态网页设计，用来写 HTML 再适合不过，这时已经支持代码片段了。
+
+Notepad2，这是一款非常不错的软件，可以添加到右键菜单，也可以直接集成到系统，直接替换 Windows 自带的记事本，由于历史原因，记事本存在很多 bug，比如 BOM 头，回车换行符等。至今，只要一装系统，我必定会将之替换系统记事本。
+
+用过 Linux 的童鞋，都接触过 vim，最初还是 vi 的时候，没有语法高亮，到了 vim，已经很强大了，还能集成各种好用的插件。不过用之开发大型项目还是不妥，稍微小修小改一些文件倒是还不错。
+
+陪伴我最长的，是 Sublime，编辑器界的神器，不多讲，从事开发的都知道。Atom 我就不想说了，打开速度奇慢，个人不喜欢。
+
+至于 IDE，都很强大，各种都玩过，不过我并不喜欢，因为打开速度奇慢，大部分界面丑，颜色主题都不是太入眼，除非开发指定环境下的应用程序我才会用到。
+
+直至使用了 VSCode，我就基本不碰其他编辑器了，原因很简单，好用，算是微软最良心的一款作品了。
+
+下面聊聊我比较喜欢的 VSCode 插件。
+
+
+
+### 扩展包路径
+
+系统集成软件包位于
+
+```
+D:\Program Files\Microsoft VS Code\resources\app\extensions
+```
+
+扩展软件包位于
+
+```
+C:\Users\Quanzaiyu\.vscode\extensions
+```
+
+## 功能增强型插件
+
+### GitLens (Eric Amodio)
+
+[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 将 Git 的功能添加到 Visual Studio Code 中。它帮助您可视化代码的作者，通过Git的注释和代码的视角，无缝地导航和探索 Git 仓库，通过强大的比较命令获得有价值的见解，等等。
+
+![GitLens](@/img/gitlens-logo.png)
+
+常用配置
+
+```json
+"gitlens.gitExplorer.enabled": true,
+"gitlens.historyExplorer.enabled": true,
+"gitlens.gitExplorer.files.layout": "auto",
+"gitlens.historyExplorer.location": "scm",
+"gitlens.resultsExplorer.location": "scm",
+"gitlens.gitExplorer.location": "scm",
+```
+
+
+### Code Outline (Patryk Zawadzki)
+
+[Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline) 在浏览器窗格中显示一个代码大纲树。
+
+![Code-Outline](@/img/Code-Outline.png =128x)
+
+常用配置
+
+```json
+"symbolOutline.doSort": true,
+"symbolOutline.expandNodes": [],
+"symbolOutline.sortOrder": [],
+"symbolOutline.topLevel": []
+```
+
+
+### Bookmarks (Alessandro Fragnani)
+
+[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) 在编辑器中标记行并轻松跳转到它们。
+
+![bookmarks](@/img/bookmarks.png =128x)
+
+常用命令
+
+```
+Bookmarks: Toggle
+Bookmarks: Jump to Next
+Bookmarks: Jump to Previous
+Bookmarks: List
+Bookmarks: List from All
+Bookmarks: Clear
+Bookmarks: Clear from All Files
+Bookmarks (Selection): Select Lines
+Bookmarks (Selection): Expand Selection to Next
+Bookmarks (Selection): Expand Selection to Previous
+Bookmarks (Selection): Shrink Selection Shrink
+```
+
+常用配置
+
+```json
+"bookmarks.navigateThroughAllFiles": true
+"bookmarks.saveBookmarksInProject": true
+"bookmarks.treeview.visible": true
+```
+
+常用快捷键
+
+- [[Ctrl]] + [[Alt]] + [[K]] 添加/删除书签
+
+
+### Project Manager (Alessandro Fragnani)
+
+[Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 用于在 VSCode 中管理项目。轻松地访问和切换它们。您可以定义自己喜欢的项目，并自动检测 VSCode 项目、Git、Mercurial 和 SVN 储存库。
+
+![project_manager](@/img/project_manager.png =128x)
+
+常用命令
+
+```
+Project Manager: Edit Project
+Project Manager: List Projects to Open
+Project Manager: List Projects to Open in New Window
+Project Manager: Refresh Projects
+Project Manager: Save Project
+```
+
+项目管理文件像这样
+
+```json
+[
+  {
+    "name": "Numbered Bookmarks",
+    "rootPath": "$home\\Documents\\GitHub\\vscode-numbered-bookmarks",
+    "paths": [],
+    "group": ""
+  }
+]
+```
+
+常用配置
+
+```json
+"projectManager.sortList": "Name",
+"projectManager.groupList": true,
+```
+
+常用快捷键
+
+- [[Alt]] + [[Shift]] + [[P]] 列出所有项目
+
+
+### Auto Close Tag (Jun Han)
+
+如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
+
+配置
+
+```json
+"auto-close-tag.enableAutoCloseTag": true,
+"auto-close-tag.enableAutoCloseSelfClosingTag": true,
+"auto-close-tag.activationOnLanguage": ["*"], // 使用 * 以包括以下语言的自动执行: xml、php、blade、ejs、jinja、javascript、javascriptreact、typescript、typescriptreact、plaintext、markdown、vue、liquid、erb、lang-cfml、cfml、HTML (Eex)
+"auto-close-tag.fullMode": true, // 同时开启 Visual Studio 模式 和 Sublime Text 模式
+```
+
+
+### Fix Json (Oliver Sturm)
+
+[Fix Json](https://marketplace.visualstudio.com/items?itemName=oliversturm.fix-json) 使用 [jsonic](https://github.com/rjrodger/jsonic) 解析一些 "bad Json"，使之严格化。如
+
+`{ foo:"bar", red:1, }` 将转化为 `{ "foo":"bar", "red":1 }`
+
+![fix_json](@/img/fix_json.png =128x)
+
+相关命令
+
+```
+Fix JSON
+```
+
+相关设置
+
+```json
+"fixJson.indentationSpaces": null
+```
+
+
+### vscode-json (Andy Aldo)
+
+[vscode-json](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json) 可以对 JSON 文件进行压缩、格式化、验证等一些列操作。
+
+相关命令和快捷键
+
+命令前缀: `vscode-json`
+
+- Validate: [[Ctrl]] + [[Alt]] + [[V]]
+- Beautify: [[Ctrl]] + [[Alt]] + [[B]]
+- Uglify: [[Ctrl]] + [[Alt]] + [[U]]
+- Escape: [[Ctrl]] + [[Alt]] + [[']]
+- Unescape: [[Ctrl]] + [[Alt]] + [[;]]
+
+
+### :emojisense: (Matt Bierner)
+
+[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) 可以很方便地在 VSCode 中输入表情符号。
+
+![emojisense](@/img/emojisense.png =128x)
+
+相关配置
+
+```
+"emojisense.languages": {}
+```
+
+
+
+## 界面美化类插件
+
+### Background (shalldie)
+
+[Background](https://marketplace.visualstudio.com/items?itemName=shalldie.background) 在 vscode 中添加一个可爱的背景图像。
+
+![background](@/img/background.png =128x)
+
+::: warning 注意
+此插件是通过修改 vscode 的 css 文件的方式运行，如果在 vscode 中提示软件已损坏，可以点击【不再显示】。
+:::
+
+常用配置
+
+```json
+"background.enabled": true,
+"background.style": {
+  "content": "''",
+  "pointer-events": "none",
+  "position": "absolute",
+  "z-index": "99999",
+  "width": "100%",
+  "height": "100%",
+  "background-position": "100% 100%",
+  "background-repeat": "no-repeat",
+  "opacity": 0.5
+},
+```
+
+### Material Icon Theme (Philipp Kief)
+
+个人非常喜欢的一款主题: [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)。
+
+![](@/img/Material_Icon_Theme.png =128x)
+
+File Icons
+
+![](@/img/fileIcons.png)
+
+Folder Icons
+
+![](@/img/folderIcons.png)
+
+配置主题颜色:
+
+```json
+"material-icon-theme.folders.color": "#ef5350",
+"material-icon-theme.folders.theme": "specific",
+```
+
+相关命令:
+
+```
+Material Icons:
+```
+
+## 语言支持
+
+### Markdown All In One (Yu Zhang)
+
+所有需要的Markdown 功能都在 [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (键盘快捷键，目录大纲，自动预览等)。
+
+![markdown_all_in_one](@/img/markdown_all_in_one.png =128x)
+
+常用快捷键
+
+- [[Ctrl]] + [[B]] 加粗
+- [[Ctrl]] + [[I]] 加斜
+- [[Ctrl]] + [[Shift]] + [[[]] 减少标题级别
+- [[Ctrl]] + [[Shift]] + [[]]] 增加标题级别
+- [[Ctrl]] + [[Shift]] + [[V]] 打开预览
+- [[Alt]] + [[S]] 删除线
+- [[Alt]] + [[Shift]] + [[F]] 代码格式化(针对表格)，或右键执行
+
+常用命令
+
+```
+markdown: 命令前缀
+ctoc (Create Table of Contents) 创建 TOC
+olp (Open Locked Preview to the Side) 打开侧边栏预览
+```
+
+创建列表的时候:
+
+```
+tab 缩进
+backspace 反缩进
+```
+
+
+### Vetur (Pine Wu)
+
+[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) 用于 Vue 的语法支持。
+
+参考文档: [官方文档](https://vuejs.github.io/vetur/setup.html)、[veturpack](https://github.com/octref/veturpack)、[Vue Language Server](https://github.com/vuejs/vetur/tree/master/server)
+
+![vetur](@/img/vetur.png =128x)
+
+### Sass (Robin Bentley)
+
+[Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) 提供 Sass 语法高亮、自动完成、snippets 的支持。
+
+![sass](@/img/sass.png)
+
+
+### Language Stylus (sysoev)
+
+[Language Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) 提供 Stylus 语法高亮、自动完成、snippets 的支持。
+
+![stylus](@/img/stylus.png =128x)
+
+
+
+## 智能感知
+
+### Npm Intellisense (Christian Kohler)
+
+[Npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) 用于智能提示 NPM 模块。
+
+![npm_intellisense](@/img/npm_intellisense.png =128x)
+
+相关配置
+
+```json
+"npm-intellisense.importES6": true,
+"npm-intellisense.importQuotes": "'",
+"npm-intellisense.importLinebreak": ";\r\n",
+"npm-intellisense.importDeclarationType": "const",
+"npm-intellisense.scanDevDependencies": true,
+```
+
+
+### Path Intellisense (Christian Kohler)
+
+[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) 用于自动完成文件名。
+
+![path_intellisense](@/img/path_intellisense.png =128x)
+
+相关配置
+
+定义绝对路径
+
+```json
+"path-intellisense.mappings": {
+  "/": "${workspaceRoot}",
+  "lib": "${workspaceRoot}/lib",
+  "global": "/Users/dummy/globalLibs"
+},
+```
+
+
+## 代码验证
+
+### ESLint (Dirk Baeumer)
+
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 参见文档: [英文文档](https://eslint.org/) 、 [中文文档](http://eslint.cn/)
+
+![eslint](@/img/eslint.png =128x)
+
+相关配置
+
+```json
+"eslint.options": { "configFile": "C:/mydirectory/.eslintrc.json" }
+```
+
+
+### TSlint (egamma)
+
+[TSlint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) 参考文档: [英文文档](https://palantir.github.io/tslint/) 、 [GitHub](https://github.com/palantir/tslint)
+
+![tslint](@/img/tslint.png)
+
+
+## 其他一些常用扩展
+
+- 功能扩展
+
+[TODO-Highlight] Todo 管理
+
+[Todo+] Todo 管理
+
+[VSNotes]
+
+[XML Tools]
+
+[Code Runner]
+
+[Auto Rename Tag]
+
+[Bracket Jumper]
+
+[Bracket Pair Colorizer]
+
+[Document This]
+
+[file-size]
+
+[Output Colorizer]
+
+[Subtle Brackets]
+
+[TODO Highlight]
+
+[Todo Tree]
+
+[Active File In StatusBar]
+
+[npm]
+
+- 代码检测
+
+[Code Spell Checker]
+
+- 代码提示
+
+[HTML CSS Support]
+
+[IntelliSense for CSS class names in HTML]
+
+[PHP IntelliSense]
+
+[Less IntelliSense]
+
+[eslint-disable-snippets]
+
+[Pug (Jade) Snippets]
+
+[vscode-wechat]
+
+[Vue 2 Snippets]
+
+[canvas-snippets]
+
+[vscode weapp api]
+
+[vscode wxml]
+
+[vscode-wechat]
+
+[Vue Vscode Snippets]
+
+- 代码转换
+
+[Paste JSON as Code] json 转化为代码
+
+- 语法支持
+
+[minapp]
+
+[.ejs]
+
+[Python]
+
+[weex]
+
+[Chinese (Simplified) Language Pack for VS Code]
+

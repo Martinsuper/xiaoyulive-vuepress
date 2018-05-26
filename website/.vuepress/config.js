@@ -71,12 +71,7 @@ module.exports = {
       md.use(require('markdown-it-deflist'))
       md.use(require('markdown-it-smartarrows'))
       md.use(require('markdown-it-imsize'))
-      md.use(require('markdown-it-implicit-figures'), {
-        dataType: false,
-        figcaption: true,
-        tabindex: false,
-        link: false
-      })
+      md.use(require('markdown-it-implicit-figures'))
       md.use(require('markdown-it-inline-comments'))
       md.use(require('markdown-it-attrs'))
       md.use(require('markdown-it-math'))
