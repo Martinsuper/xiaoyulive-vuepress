@@ -11,9 +11,32 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': resolve('../static'),
-        '@app': resolve('lib/app')
+        '@': resolve('../static')
       }
+    }
+  },
+  markdown: {
+    anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '$' },
+    toc: { includeLevel: [1, 2, 3] },
+    config: md => {
+      md.use(require('markdown-it-sub'))
+      md.use(require('markdown-it-sup'))
+      md.use(require('markdown-it-mark'))
+      md.use(require('markdown-it-ins'))
+      md.use(require('markdown-it-abbr'))
+      md.use(require('markdown-it-kbd'))
+      md.use(require('markdown-it-underline'))
+      md.use(require('markdown-it-footnote'))
+      md.use(require('markdown-it-checkbox'))
+      md.use(require('markdown-it-task-checkbox'))
+      md.use(require('markdown-it-deflist'))
+      md.use(require('markdown-it-smartarrows'))
+      md.use(require('markdown-it-imsize'))
+      md.use(require('markdown-it-implicit-figures'))
+      md.use(require('markdown-it-inline-comments'))
+      md.use(require('markdown-it-attrs'))
+      md.use(require('markdown-it-math'))
+      md.use(require('markdown-it-plantuml'))
     }
   },
   locales: {
@@ -52,30 +75,6 @@ module.exports = {
           ]
         }
       }
-    }
-  },
-  markdown: {
-    anchor: { permalink: false },
-    toc: { includeLevel: [1, 2, 3] },
-    config: md => {
-      md.use(require('markdown-it-sub'))
-      md.use(require('markdown-it-sup'))
-      md.use(require('markdown-it-mark'))
-      md.use(require('markdown-it-ins'))
-      md.use(require('markdown-it-abbr'))
-      md.use(require('markdown-it-kbd'))
-      md.use(require('markdown-it-underline'))
-      md.use(require('markdown-it-footnote'))
-      md.use(require('markdown-it-checkbox'))
-      md.use(require('markdown-it-task-checkbox'))
-      md.use(require('markdown-it-deflist'))
-      md.use(require('markdown-it-smartarrows'))
-      md.use(require('markdown-it-imsize'))
-      md.use(require('markdown-it-implicit-figures'))
-      md.use(require('markdown-it-inline-comments'))
-      md.use(require('markdown-it-attrs'))
-      md.use(require('markdown-it-math'))
-      md.use(require('markdown-it-plantuml'))
     }
   }
 }
