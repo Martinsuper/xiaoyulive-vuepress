@@ -39,6 +39,8 @@ D:\Program Files\Microsoft VS Code\resources\app\extensions
 C:\Users\Quanzaiyu\.vscode\extensions
 ```
 
+
+
 ## 功能增强型插件
 
 ### GitLens (Eric Amodio)
@@ -59,6 +61,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 ```
 
 
+
 ### Code Outline (Patryk Zawadzki)
 
 [Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline) 在浏览器窗格中显示一个代码大纲树。
@@ -73,6 +76,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 "symbolOutline.sortOrder": [],
 "symbolOutline.topLevel": []
 ```
+
 
 
 ### Bookmarks (Alessandro Fragnani)
@@ -108,6 +112,8 @@ Bookmarks (Selection): Shrink Selection Shrink
 常用快捷键
 
 - [[Ctrl]] + [[Alt]] + [[K]] 添加/删除书签
+
+
 
 
 ### Project Manager (Alessandro Fragnani)
@@ -151,6 +157,8 @@ Project Manager: Save Project
 - [[Alt]] + [[Shift]] + [[P]] 列出所有项目
 
 
+
+
 ### Auto Close Tag (Jun Han)
 
 如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
@@ -163,6 +171,21 @@ Project Manager: Save Project
 "auto-close-tag.activationOnLanguage": ["*"], // 使用 * 以包括以下语言的自动执行: xml、php、blade、ejs、jinja、javascript、javascriptreact、typescript、typescriptreact、plaintext、markdown、vue、liquid、erb、lang-cfml、cfml、HTML (Eex)
 "auto-close-tag.fullMode": true, // 同时开启 Visual Studio 模式 和 Sublime Text 模式
 ```
+
+
+
+### Auto Rename Tag (Jun Han)
+
+[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名成对的HTML/XML标签。
+
+![](@/img/Auto_Rename_Tag.png)
+
+相关配置:
+
+```json
+"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"]
+```
+
 
 
 ### Fix Json (Oliver Sturm)
@@ -212,6 +235,119 @@ Fix JSON
 ```
 "emojisense.languages": {}
 ```
+
+
+
+### TODO-Highlight (Wayou Liu)
+
+[TODO-Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) 在编辑器中高亮显示 `TODO:`、`FIXME:`。
+
+![TODO_Highlight](@/img/TODO_Highlight.png =128x)
+
+
+
+### Todo+ (Fabio Spampinato)
+
+[Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus) 轻松地管理待办事项列表。功能强大，易于使用和定制。
+
+![Todo+](@/img/Todo+.png =128x)
+
+相关命令
+
+```
+'Todo: Open' // Open or create your project's todo file
+'Todo: Open Embedded' // Open embedded todos
+'Todo: Toggle Box' // Toggle todo's box symbol
+'Todo: Toggle Done' // Toggle todo's done symbol
+'Todo: Toggle Cancelled' // Toggle todo's cancelled symbol
+'Todo: Toggle Start' // Toggle a todo as started
+'Todo: Archive' // Archive finished todos
+```
+
+快捷键
+
+```
+'Cmd/Ctrl+Enter' // Triggers Todo: Toggle Box
+'Alt+D' // Triggers Todo: Toggle Done
+'Alt+C' // Triggers Todo: Toggle Cancelled
+'Alt+S' // Triggers Todo: Toggle Start
+'Cmd/Ctrl+Shift+A' // Triggers  Todo: Archive
+```
+
+相关配置
+
+````
+"todo.file": "TODO",
+"todo.symbols.box": "☐",
+"todo.symbols.cancelled": "✘",
+"todo.symbols.done": "✔",
+"todo-tree.tags": [
+  "TODO",
+  "FIXME"
+]
+````
+
+
+
+### VSNotes (Patrick Lee)
+
+[VS Notes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes) 是一个简单的工具，它负责创建和管理纯文本注释.
+
+![](@/img/VS_Notes.png =128x)
+
+
+
+### Code Runner (Jun Han)
+
+[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 可以运行 C, C++, Java, JS, PHP, Python...
+
+![](@/img/Code_Runner.png =128x)
+
+
+
+### Bracket Jumper (sashaweiss)
+
+[Bracket Jumper](https://marketplace.visualstudio.com/items?itemName=sashaweiss.bracket-jumper) 可以在括号起始间跳转。
+
+快捷键
+
+- [[Ctrl]] + [[Alt]] + [[-->]]
+- [[Ctrl]] + [[Alt]] + [[<--]]
+
+
+
+### Bracket Pair Colorizer (CoenraadS)
+
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) 允许将匹配的括号标识为颜色。用户可以定义要匹配的字符，以及要使用哪些颜色。
+
+![Bracket_Pair_Colorizer](@/img/Bracket_Pair_Colorizer.png =128x)
+
+相关配置
+
+```json
+"bracketPairColorizer.colorMode": "Consecutive",
+"bracketPairColorizer.consecutivePairColors": [
+  "()",
+  "[]",
+  "{}",
+  "<>",
+  [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  "Red"
+],
+"bracketPairColorizer.timeOut": 0,
+```
+
+
+
+### file-size (zhuang)
+
+[file-size](https://marketplace.visualstudio.com/items?itemName=zh9528.file-size) 会在状态栏显示当前文件大小。
+
+![file-size](@/img/file-size.png =128x)
 
 
 
@@ -317,7 +453,7 @@ backspace 反缩进
 
 [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) 提供 Sass 语法高亮、自动完成、snippets 的支持。
 
-![sass](@/img/sass.png)
+![sass](@/img/sass.png =128x)
 
 
 ### Language Stylus (sysoev)
@@ -385,38 +521,18 @@ backspace 反缩进
 
 [TSlint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) 参考文档: [英文文档](https://palantir.github.io/tslint/) 、 [GitHub](https://github.com/palantir/tslint)
 
-![tslint](@/img/tslint.png)
+![tslint](@/img/tslint.png =128x)
 
 
 ## 其他一些常用扩展
 
-- 功能扩展
-
-[TODO-Highlight] Todo 管理
-
-[Todo+] Todo 管理
-
-[VSNotes]
-
 [XML Tools]
 
-[Code Runner]
-
-[Auto Rename Tag]
-
-[Bracket Jumper]
-
-[Bracket Pair Colorizer]
-
 [Document This]
-
-[file-size]
 
 [Output Colorizer]
 
 [Subtle Brackets]
-
-[TODO Highlight]
 
 [Todo Tree]
 

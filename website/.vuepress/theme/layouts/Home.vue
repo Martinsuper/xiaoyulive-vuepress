@@ -35,6 +35,7 @@ export default {
 .home
   padding $navbarHeight 2rem 0
   max-width 960px
+  min-height 1000px
   margin 0px auto
   .title
     text-align center

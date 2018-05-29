@@ -139,6 +139,7 @@ function find (page, items, offset) {
 
 .page
   padding-bottom 2rem
+  min-height 1000px
 
 .edit-link.content
   padding-top 0 !important

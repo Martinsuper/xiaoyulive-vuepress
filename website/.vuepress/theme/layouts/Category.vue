@@ -16,6 +16,7 @@
 @import '../styles/config.styl'
 .container
   max-width $navWidth
+  min-height 1000px
   margin 0 auto
   .title
     text-align center
