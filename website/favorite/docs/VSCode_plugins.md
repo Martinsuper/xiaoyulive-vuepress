@@ -526,6 +526,8 @@ backspace 反缩进
 
 ## 其他一些常用扩展
 
+[Git Project Manager]
+
 [XML Tools]
 
 [Document This]
