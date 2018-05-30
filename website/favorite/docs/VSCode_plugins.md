@@ -530,6 +530,11 @@ npm.runInTerminal 定义命令是否在终端窗口中运行，或者是显示�
 
 ![minapp](@/img/minapp.png =128x)
 
+相关插件:
+
+- [vscode wxml](https://marketplace.visualstudio.com/items?itemName=coderfee.vscode-wxml)
+
+- [vscode weapp api](https://marketplace.visualstudio.com/items?itemName=coderfee.vscode-weapp-api)
 
 ### .ejs (Qassim Farid)
 
@@ -558,6 +563,13 @@ Python: Select Linter
 [weex](https://marketplace.visualstudio.com/items?itemName=jaylinwang.weex) 提供 weex 语法支持。
 
 ![weex](@/img/weex.png = 128x)
+
+
+### XML Tools
+
+[XML Tools - Qub](https://marketplace.visualstudio.com/items?itemName=qub.qub-xml-vscode)
+
+[XML Tools - Josh Johnson](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
 
 
 ### 语言包
@@ -603,6 +615,43 @@ Python: Select Linter
 ```
 
 
+### PHP IntelliSense (Felix Becker)
+
+[PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense) 需要安装至少 PHP7 并将之添加至环境变量，或者设置 `php.executablePath`。
+
+![PHP_IntelliSense](@/img/PHP_IntelliSense.png =128x)
+
+### Less IntelliSense (mrmlnc)
+
+[Less IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-less) 将检测整个工作空间的 less 文件，并获取其 Variables and Mixins。
+
+![Less_IntelliSense](@/img/Less_IntelliSense.png =128x)
+
+
+### HTML CSS Support (ecmel)
+
+[HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) 有如下特性:
+
+- Class 和 Id 属性的自动完成
+- 检测当前 workspace 下的 css、scss 文件
+- 支持远程 css 检测
+
+![HTML_CSS_Support](@/img/HTML_CSS_Support.png =128x)
+
+相关配置
+
+```
+{
+  "css.remoteStyleSheets": [
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  ],
+  "css.fileExtensions": [ "css", "scss"]
+}
+```
+
+类似的插件有 [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)，个人更喜欢前者。
+
+
 ### Auto Close Tag (Jun Han)
 
 如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
@@ -621,7 +670,7 @@ Python: Select Linter
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名成对的HTML/XML标签。
 
-![](@/img/Auto_Rename_Tag.png)
+![](@/img/Auto_Rename_Tag.png =128x)
 
 相关配置:
 
@@ -630,7 +679,7 @@ Python: Select Linter
 ```
 
 
-## 代码片段与输入型扩展
+## 输入型扩展
 
 ### :emojisense: (Matt Bierner)
 
@@ -721,35 +770,13 @@ int    errornumber;   // Is also ok
 配置详解: 在这个例子中，定义了两个字典: medicalTerms 和 cities，路径是相对于 cSpell.json 的位置，这允许将字典检入到项目中。cities 用于每个文件类型，因为它被添加到 dictionaries 中。medicalTerms 只在编辑 markdown 或 纯文本文件 时使用。
 
 
-## 其他一些常用扩展
+## 代码片段
 
-[XML Tools]
+- [eslint-disable-snippets](https://marketplace.visualstudio.com/items?itemName=drKnoxy.eslint-disable-snippets)
+- [Vue Vscode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+- [Pug (Jade) Snippets](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-jade-snippets)
 
-- 代码提示
-
-[HTML CSS Support]
-
-[IntelliSense for CSS class names in HTML]
-
-[PHP IntelliSense]
-
-[Less IntelliSense]
-
-[eslint-disable-snippets]
-
-[Pug (Jade) Snippets]
-
-[vscode-wechat]
-
-[Vue 2 Snippets]
-
-[canvas-snippets]
-
-[vscode weapp api]
-
-[vscode wxml]
-
-[vscode-wechat]
-
-[Vue Vscode Snippets]
+- [Vue 2 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
+- [canvas-snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.canvas-snippets)
+- [vscode-wechat](https://marketplace.visualstudio.com/items?itemName=qinjia.vscode-wechat)
 
