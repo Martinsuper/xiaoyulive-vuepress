@@ -56,6 +56,7 @@ module.exports = {
         nav: [
           { text: '生活漫谈', link: '/articles/' },
           { text: '学无止境', link: '/technology/' },
+          { text: '学习札记', link: '/notes/' },
           { text: '收藏夹', link: '/favorite/' },
           // { text: '测试', link: '/test/' },
           { text: '书籍', link: 'https://www.kancloud.cn/@xiaoyulive' },
