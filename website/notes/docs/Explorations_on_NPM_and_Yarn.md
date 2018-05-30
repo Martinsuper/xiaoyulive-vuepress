@@ -138,6 +138,63 @@ node_modules
 详细教程可以参考阮大大的 [《npm scripts 使用指南》](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)，此处仅作为抛砖引玉。
 
 
+## yarn
+
+Yarn 是 Facebook, Google, Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。就像我们可以从官方文档了解那样，它的目的是解决这些团队使用 npm 面临的少数问题，即：
+
+- 安装的时候无法保证速度/一致性
+- 安全问题，因为 npm 安装时允许运行代码
+
+每当 npm 或 Yarn 需要安装一个包时，它会进行一系列的任务。在 npm 中这些任务是按包的顺序一个个执行，这意味着必须等待上一个包被完整安装才会进入下一个；Yarn 则并行的执行这些任务，提高了性能。
+
+### yarn.lock 文件
+
+npm 和 Yarn 都使用 `package.json` 来跟踪项目的依赖，版本号并非一直准确，因为你可以定义版本号范围，这样你可以选择一个主版本和次要版本的包，但让 npm 安装最新的补丁也许可以修改一些 bug。
+
+理想状态下使用[语义化版本](http://semver.org/)发布补丁不会包含大的变化，但不幸的是这必非真理。npm 的这种策略可能导致两台拥有相同 `package.json` 文件的机子安装了不同版本的包，这可能导致一些错误。
+
+为了避免包版本的错误匹配，一个确定的安装版本被固定在一个锁文件中。每次模块被添加时，Yarn 就会创建（或更新）`yarn.lock` 文件，这样你就可以保证其它机子也安装相同版本的包，同时包含了 `package.json` 中定义的一系列允许的版本。
+
+在 npm 中同样可以使用 `npm shrinkwrap` 命令来生成一个锁文件，这样在使用 `npm install` 时会在读取 `package.json` 前先读取这个文件，就像 Yarn 会先读取`yarn.lock` 一样。这里的区别是 Yarn 总会自动更新 `yarn.lock`，而 npm 需要你重新操作。
+
+1. [yarn.lock 文档](https://yarnpkg.com/en/docs/configuration#toc-use-yarn-lock-to-pin-your-dependencies)
+2. [npm shrinkwrap 文档](https://docs.npmjs.com/cli/shrinkwrap)
+
+### 与 npm 命令对比
+
+yarn 相关文档: [中文文档](https://yarn.bootcss.com/docs/cli/)、[英文文档](https://yarnpkg.com/en/docs/cli/)
+
+npm 相关文档: [英文文档](https://docs.npmjs.com/cli/)
+
+命令对比: [从 npm 迁移到 Yarn](https://yarn.bootcss.com/docs/migrating-from-npm.html#toc-cli-commands-comparison)
+
+全局安装
+
+- yarn: `yarn global add package`
+
+- npm: `npm i package -g` 或 `npm i package --global`
+
+局部安装
+
+- yarn: `yarn add package` 
+
+- yarn 添加开发依赖 `yarn add package --dev` 或 `yarn add package -D`
+
+- npm: `npm i package --save`
+
+- npm 添加开发依赖: `npm i package --save-dev` 或 `npm i package -D`
+
+初始化依赖淡妆
+
+- yarn: `yarn` 或 `yarn install`
+
+- npm: `npm i` 或 `npm install`
+
+卸载包
+
+- yarn: `yarn remove package`
+- npm: `npm uninstall --save package` 或 `npm uninstall --save-dev package`
+
 
 ## npm 与 yarn 的缓存策略对比
 
@@ -320,4 +377,7 @@ https://github.com/npm/npm/issues/19989
 [^3]: [为什么我们应该使用 pnpm（译）](https://segmentfault.com/a/1190000013214927)
 
 [^4]: [NPM本地缓存方案](http://ju.outofmemory.cn/entry/64247)
+
+[^5]: [Yarn vs npm: 你需要知道的一切](http://web.jobbole.com/88459/)
+
 
