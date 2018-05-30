@@ -13,8 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "less": "^3.0.4",
-    "less-loader": "^4.1.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-asciimath": "^1.0.0",
     "markdown-it-attrs": "^2.1.0",
@@ -41,10 +39,12 @@
   },
   "devDependencies": {
     "lodash.throttle": "^4.1.1",
-    "node-sass": "^4.9.0",
     "prismjs": "^1.13.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1"
   }
 }
