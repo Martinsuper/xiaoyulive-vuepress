@@ -40,7 +40,6 @@ C:\Users\Quanzaiyu\.vscode\extensions
 ```
 
 
-
 ## 功能增强型插件
 
 ### GitLens (Eric Amodio)
@@ -61,7 +60,6 @@ C:\Users\Quanzaiyu\.vscode\extensions
 ```
 
 
-
 ### Code Outline (Patryk Zawadzki)
 
 [Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline) 在浏览器窗格中显示一个代码大纲树。
@@ -78,43 +76,149 @@ C:\Users\Quanzaiyu\.vscode\extensions
 ```
 
 
+### Code Runner (Jun Han)
 
-### Bookmarks (Alessandro Fragnani)
+[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 可以运行 C, C++, Java, JS, PHP, Python...
 
-[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) 在编辑器中标记行并轻松跳转到它们。
+![](@/img/Code_Runner.png =128x)
 
-![bookmarks](@/img/bookmarks.png =128x)
 
-常用命令
+### Document This
+
+[Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) 可以帮助我们自动生成 JSDoc。
+
+相关命令
+
+[[Ctrl]] + [[Alt]] + [[D]] and again [[Ctrl]] + [[Alt]] + [[D]]
+
+
+
+## JSON 相关插件
+
+### Fix Json (Oliver Sturm)
+
+[Fix Json](https://marketplace.visualstudio.com/items?itemName=oliversturm.fix-json) 使用 [jsonic](https://github.com/rjrodger/jsonic) 解析一些 "bad Json"，使之严格化。如
+
+`{ foo:"bar", red:1, }` 将转化为 `{ "foo":"bar", "red":1 }`
+
+![fix_json](@/img/fix_json.png =128x)
+
+相关命令
 
 ```
-Bookmarks: Toggle
-Bookmarks: Jump to Next
-Bookmarks: Jump to Previous
-Bookmarks: List
-Bookmarks: List from All
-Bookmarks: Clear
-Bookmarks: Clear from All Files
-Bookmarks (Selection): Select Lines
-Bookmarks (Selection): Expand Selection to Next
-Bookmarks (Selection): Expand Selection to Previous
-Bookmarks (Selection): Shrink Selection Shrink
+Fix JSON
 ```
 
-常用配置
+相关设置
 
 ```json
-"bookmarks.navigateThroughAllFiles": true
-"bookmarks.saveBookmarksInProject": true
-"bookmarks.treeview.visible": true
+"fixJson.indentationSpaces": null
 ```
 
-常用快捷键
 
-- [[Ctrl]] + [[Alt]] + [[K]] 添加/删除书签
+### vscode-json (Andy Aldo)
+
+[vscode-json](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json) 可以对 JSON 文件进行压缩、格式化、验证等一些列操作。
+
+相关命令和快捷键
+
+命令前缀: `vscode-json`
+
+- Validate: [[Ctrl]] + [[Alt]] + [[V]]
+- Beautify: [[Ctrl]] + [[Alt]] + [[B]]
+- Uglify: [[Ctrl]] + [[Alt]] + [[U]]
+- Escape: [[Ctrl]] + [[Alt]] + [[']]
+- Unescape: [[Ctrl]] + [[Alt]] + [[;]]
 
 
+### Paste JSON as Code (quicktype)
 
+[Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) 将 json 转化为代码。
+
+相关命令
+
+```
+Paste JSON as Code
+```
+
+
+## 括号匹配
+
+### Bracket Jumper (sashaweiss)
+
+[Bracket Jumper](https://marketplace.visualstudio.com/items?itemName=sashaweiss.bracket-jumper) 可以在括号起始间跳转。
+
+快捷键
+
+- [[Ctrl]] + [[Alt]] + [[-->]]
+- [[Ctrl]] + [[Alt]] + [[<--]]
+
+
+### Bracket Pair Colorizer (CoenraadS)
+
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) 允许将匹配的括号标识为颜色。用户可以定义要匹配的字符，以及要使用哪些颜色。
+
+![Bracket_Pair_Colorizer](@/img/Bracket_Pair_Colorizer.png =128x)
+
+相关配置
+
+```json
+"bracketPairColorizer.colorMode": "Consecutive",
+"bracketPairColorizer.consecutivePairColors": [
+  "()",
+  "[]",
+  "{}",
+  "<>",
+  [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  "Red"
+],
+"bracketPairColorizer.timeOut": 0,
+```
+
+### Subtle Brackets (Rafa Mel )
+
+[Subtle Brackets](https://marketplace.visualstudio.com/items?itemName=rafamel.subtle-brackets) 可以在匹配的括号添加下划线。
+
+![Subtle_Brackets](@/img/Subtle_Brackets.png)
+
+相关配置
+
+```json
+subtleBrackets.bracketPairs: ["{}", "[]", "()"]
+```
+
+
+## 状态栏
+
+### file-size (zhuang)
+
+[file-size](https://marketplace.visualstudio.com/items?itemName=zh9528.file-size) 会在状态栏显示当前文件大小。
+
+![file-size](@/img/file-size.png =128x)
+
+
+### Active File In StatusBar (RoscoP)
+
+[Active File In StatusBar](https://marketplace.visualstudio.com/items?itemName=RoscoP.ActiveFileInStatusBar) 将在状态栏显示当前文件的完整路径。
+
+![Active_File_In_StatusBar](@/img/Active_File_In_StatusBar.png)
+
+相关配置
+
+```json
+{
+  "ActiveFileInStatusBar.enable": true,
+  "ActiveFileInStatusBar.fullpath": true,
+  "ActiveFileInStatusBar.revealFile": false
+}
+```
+
+
+## 项目管理
 
 ### Project Manager (Alessandro Fragnani)
 
@@ -157,85 +261,42 @@ Project Manager: Save Project
 - [[Alt]] + [[Shift]] + [[P]] 列出所有项目
 
 
+### Git Project Manager (Felipe Caputo)
 
+[Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager) (GPM) 允许直接从 VSCode 窗口打开一个 Git 存储库的新窗口。
 
-### Auto Close Tag (Jun Han)
+![GPM](@/img/GPM.png =128x)
 
-如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
+常用命令
 
-配置
+```
+GPM: Open Git Project
+GPM: Refresh Projects
+```
+
+常用配置
 
 ```json
-"auto-close-tag.enableAutoCloseTag": true,
-"auto-close-tag.enableAutoCloseSelfClosingTag": true,
-"auto-close-tag.activationOnLanguage": ["*"], // 使用 * 以包括以下语言的自动执行: xml、php、blade、ejs、jinja、javascript、javascriptreact、typescript、typescriptreact、plaintext、markdown、vue、liquid、erb、lang-cfml、cfml、HTML (Eex)
-"auto-close-tag.fullMode": true, // 同时开启 Visual Studio 模式 和 Sublime Text 模式
+{
+  "gitProjectManager.openInNewWindow": false
+}
 ```
 
 
+## 标记型插件
 
-### Auto Rename Tag (Jun Han)
+### Todo Tree (Gruntfuggly)
 
-[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名成对的HTML/XML标签。
+[Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) 可以快速搜索您的工作空间，以获取注释标签，例如 TODO 和 FIXME，并在浏览器窗格中的树视图中显示它们。
 
-![](@/img/Auto_Rename_Tag.png)
+![Todo_Tree](@/img/Todo_Tree.png =128x)
 
-相关配置:
+常用配置
 
 ```json
-"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"]
+todo‑tree.tags: ["TODO","FIXME"],
+todo‑tree.showInExplorer: true
 ```
-
-
-
-### Fix Json (Oliver Sturm)
-
-[Fix Json](https://marketplace.visualstudio.com/items?itemName=oliversturm.fix-json) 使用 [jsonic](https://github.com/rjrodger/jsonic) 解析一些 "bad Json"，使之严格化。如
-
-`{ foo:"bar", red:1, }` 将转化为 `{ "foo":"bar", "red":1 }`
-
-![fix_json](@/img/fix_json.png =128x)
-
-相关命令
-
-```
-Fix JSON
-```
-
-相关设置
-
-```json
-"fixJson.indentationSpaces": null
-```
-
-
-### vscode-json (Andy Aldo)
-
-[vscode-json](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json) 可以对 JSON 文件进行压缩、格式化、验证等一些列操作。
-
-相关命令和快捷键
-
-命令前缀: `vscode-json`
-
-- Validate: [[Ctrl]] + [[Alt]] + [[V]]
-- Beautify: [[Ctrl]] + [[Alt]] + [[B]]
-- Uglify: [[Ctrl]] + [[Alt]] + [[U]]
-- Escape: [[Ctrl]] + [[Alt]] + [[']]
-- Unescape: [[Ctrl]] + [[Alt]] + [[;]]
-
-
-### :emojisense: (Matt Bierner)
-
-[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) 可以很方便地在 VSCode 中输入表情符号。
-
-![emojisense](@/img/emojisense.png =128x)
-
-相关配置
-
-```
-"emojisense.languages": {}
-```
-
 
 
 ### TODO-Highlight (Wayou Liu)
@@ -244,6 +305,40 @@ Fix JSON
 
 ![TODO_Highlight](@/img/TODO_Highlight.png =128x)
 
+
+### Bookmarks (Alessandro Fragnani)
+
+[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) 在编辑器中标记行并轻松跳转到它们。
+
+![bookmarks](@/img/bookmarks.png =128x)
+
+常用命令
+
+```
+Bookmarks: Toggle
+Bookmarks: Jump to Next
+Bookmarks: Jump to Previous
+Bookmarks: List
+Bookmarks: List from All
+Bookmarks: Clear
+Bookmarks: Clear from All Files
+Bookmarks (Selection): Select Lines
+Bookmarks (Selection): Expand Selection to Next
+Bookmarks (Selection): Expand Selection to Previous
+Bookmarks (Selection): Shrink Selection Shrink
+```
+
+常用配置
+
+```json
+"bookmarks.navigateThroughAllFiles": true
+"bookmarks.saveBookmarksInProject": true
+"bookmarks.treeview.visible": true
+```
+
+常用快捷键
+
+- [[Ctrl]] + [[Alt]] + [[K]] 添加/删除书签
 
 
 ### Todo+ (Fabio Spampinato)
@@ -288,66 +383,11 @@ Fix JSON
 ````
 
 
-
 ### VSNotes (Patrick Lee)
 
 [VS Notes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes) 是一个简单的工具，它负责创建和管理纯文本注释.
 
 ![](@/img/VS_Notes.png =128x)
-
-
-
-### Code Runner (Jun Han)
-
-[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 可以运行 C, C++, Java, JS, PHP, Python...
-
-![](@/img/Code_Runner.png =128x)
-
-
-
-### Bracket Jumper (sashaweiss)
-
-[Bracket Jumper](https://marketplace.visualstudio.com/items?itemName=sashaweiss.bracket-jumper) 可以在括号起始间跳转。
-
-快捷键
-
-- [[Ctrl]] + [[Alt]] + [[-->]]
-- [[Ctrl]] + [[Alt]] + [[<--]]
-
-
-
-### Bracket Pair Colorizer (CoenraadS)
-
-[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) 允许将匹配的括号标识为颜色。用户可以定义要匹配的字符，以及要使用哪些颜色。
-
-![Bracket_Pair_Colorizer](@/img/Bracket_Pair_Colorizer.png =128x)
-
-相关配置
-
-```json
-"bracketPairColorizer.colorMode": "Consecutive",
-"bracketPairColorizer.consecutivePairColors": [
-  "()",
-  "[]",
-  "{}",
-  "<>",
-  [
-    "Gold",
-    "Orchid",
-    "LightSkyBlue"
-  ],
-  "Red"
-],
-"bracketPairColorizer.timeOut": 0,
-```
-
-
-
-### file-size (zhuang)
-
-[file-size](https://marketplace.visualstudio.com/items?itemName=zh9528.file-size) 会在状态栏显示当前文件大小。
-
-![file-size](@/img/file-size.png =128x)
 
 
 
@@ -407,6 +447,14 @@ Folder Icons
 Material Icons:
 ```
 
+
+### Output Colorizer (IBM)
+
+[Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) 为输出/调试/扩展面板和`*.log` 文件添加语法着色。
+
+![Output_Colorizer](@/img/Output_Colorizer.png =128x)
+
+
 ## 语言支持
 
 ### Markdown All In One (Yu Zhang)
@@ -463,8 +511,61 @@ backspace 反缩进
 ![stylus](@/img/stylus.png =128x)
 
 
+### npm (egamma)
 
-## 智能感知
+[npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 支持在包中运行定义的 npm 脚本，并根据 package.json 中定义的依赖项对已安装的模块进行验证。
+
+![npm](@/img/npm.png =128x)
+
+常用设置
+
+```
+npm.runInTerminal 定义命令是否在终端窗口中运行，或者是显示在输出窗口中。
+```
+
+
+### minapp (Mora Qiu)
+
+[minapp](https://marketplace.visualstudio.com/items?itemName=qiu8310.minapp-vscode) 微信小程序标签、属性的智能补全。
+
+![minapp](@/img/minapp.png =128x)
+
+
+### .ejs (Qassim Farid)
+
+[.ejs](https://marketplace.visualstudio.com/items?itemName=QassimFarid.ejs-language-support) 提供 `.ejs` 语法支持。
+
+
+### Python (Microsoft)
+
+[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 提供 python 的语法支持、单元测试、调试、验证、snippets、IntelliSense等。
+
+![python](@/img/python.png =128x)
+
+相关命令
+
+```
+Python: Select Interpreter
+Python: Create Terminal
+Python: Start REPL
+Python: Run Python File in Terminal
+Python: Select Linter
+```
+
+
+### weex (JaylinWang)
+
+[weex](https://marketplace.visualstudio.com/items?itemName=jaylinwang.weex) 提供 weex 语法支持。
+
+![weex](@/img/weex.png = 128x)
+
+
+### 语言包
+
+[Chinese (Simplified) Language Pack for VS Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
+
+
+## 智能感知与自动完成
 
 ### Npm Intellisense (Christian Kohler)
 
@@ -502,6 +603,47 @@ backspace 反缩进
 ```
 
 
+### Auto Close Tag (Jun Han)
+
+如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
+
+配置
+
+```json
+"auto-close-tag.enableAutoCloseTag": true,
+"auto-close-tag.enableAutoCloseSelfClosingTag": true,
+"auto-close-tag.activationOnLanguage": ["*"], // 使用 * 以包括以下语言的自动执行: xml、php、blade、ejs、jinja、javascript、javascriptreact、typescript、typescriptreact、plaintext、markdown、vue、liquid、erb、lang-cfml、cfml、HTML (Eex)
+"auto-close-tag.fullMode": true, // 同时开启 Visual Studio 模式 和 Sublime Text 模式
+```
+
+
+### Auto Rename Tag (Jun Han)
+
+[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名成对的HTML/XML标签。
+
+![](@/img/Auto_Rename_Tag.png)
+
+相关配置:
+
+```json
+"auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"]
+```
+
+
+## 代码片段与输入型扩展
+
+### :emojisense: (Matt Bierner)
+
+[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) 可以很方便地在 VSCode 中输入表情符号。
+
+![emojisense](@/img/emojisense.png =128x)
+
+相关配置
+
+```
+"emojisense.languages": {}
+```
+
 ## 代码验证
 
 ### ESLint (Dirk Baeumer)
@@ -524,27 +666,64 @@ backspace 反缩进
 ![tslint](@/img/tslint.png =128x)
 
 
+### Code Spell Checker (Street Side Software)
+
+[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) 会做拼写检查，支持驼峰命名(camelCase)和下划线风格(snake_case_words)的拼写。
+
+![Code_Spell_Checker](@/img/Code_Spell_Checker.png =128x)
+
+注释开启和关闭拼写检查
+
+```html
+Disable Checking
+/* cSpell:disable */
+/* spell-checker: disable */
+/* spellchecker: disable */
+
+Enable Checking
+/* cSpell:enable */
+/* spell-checker: enable */
+/* spellchecker: enable */
+
+Ignore Checking
+// cSpell:ignore zaallano, wooorrdd
+// cSpell:ignore zzooommmmmmmm
+
+Add Words
+// cSpell:words woorxs sweeetbeat
+
+Enable / Disable compound words
+// cSpell:enableCompoundWords
+char * errormessage;  // Is ok with cSpell:enableCompoundWords
+int    errornumber;   // Is also ok
+```
+
+项目字典
+
+在当前项目中创建 `cSpell.json` 以配置当前项目的拼写检查:
+
+```json
+{
+  "dictionaryDefinitions": [
+    { "name": "medicalTerms", "path": "./dictionaries/medicalterms-en.txt"},
+    { "name": "cities", "path": "./dictionaries/cities.txt"}
+  ],
+  "dictionaries": [
+    "cities"
+  ],
+  "languageSettings": [
+    { "languageId": "markdown", "dictionaries": ["medicalTerms"] },
+    { "languageId": "plaintext", "dictionaries": ["medicalTerms"] }
+  ]
+}
+```
+
+配置详解: 在这个例子中，定义了两个字典: medicalTerms 和 cities，路径是相对于 cSpell.json 的位置，这允许将字典检入到项目中。cities 用于每个文件类型，因为它被添加到 dictionaries 中。medicalTerms 只在编辑 markdown 或 纯文本文件 时使用。
+
+
 ## 其他一些常用扩展
 
-[Git Project Manager]
-
 [XML Tools]
-
-[Document This]
-
-[Output Colorizer]
-
-[Subtle Brackets]
-
-[Todo Tree]
-
-[Active File In StatusBar]
-
-[npm]
-
-- 代码检测
-
-[Code Spell Checker]
 
 - 代码提示
 
@@ -573,20 +752,4 @@ backspace 反缩进
 [vscode-wechat]
 
 [Vue Vscode Snippets]
-
-- 代码转换
-
-[Paste JSON as Code] json 转化为代码
-
-- 语法支持
-
-[minapp]
-
-[.ejs]
-
-[Python]
-
-[weex]
-
-[Chinese (Simplified) Language Pack for VS Code]
 
