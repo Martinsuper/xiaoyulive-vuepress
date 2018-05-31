@@ -83,7 +83,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 ![](@/img/Code_Runner.png =128x)
 
 
-### Document This
+### Document This (Joel Day)
 
 [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) 可以帮助我们自动生成 JSDoc。
 
@@ -91,6 +91,76 @@ C:\Users\Quanzaiyu\.vscode\extensions
 
 [[Ctrl]] + [[Alt]] + [[D]] and again [[Ctrl]] + [[Alt]] + [[D]]
 
+
+### Sort lines (Daniel Imms)
+
+[Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines) 可以对选中的代码行进行排序。也提供不区分大小写、反向和唯一等排序功能。
+
+![Sort_Lines](@/img/Sort_Lines.png =128x)
+
+相关命令
+
+```
+Sort lines
+```
+
+
+### Wallaby.js (Wallaby.js)
+
+[Wallaby.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode) 是一个高级的连续测试运行器，当您对您正在工作的文件进行测试时，它会在你的编辑器中创建通过测试或测试失败的视觉反馈。
+
+![Wallaby.js](@/img/Wallaby.js.png =128x)
+
+
+### Sync Settings (Shan Ali Khan)
+
+[Sync Settings](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 是一个设置同步插件，你很有可能在多台电脑上进行编码工作。此插件使得在电脑上移植你的插件和设置是轻而易举的事。
+
+![Settings_Sync](@/img/Settings_Sync.png =128x)
+
+特性
+
+1. Use your GitHub account token and Gist.
+2. Easy to Upload and Download on one click.
+3. Show a summary page at the end with details about config and extensions effected.
+4. Auto Download Latest Settings on Startup.
+5. Auto upload Settings on file change.
+6. Share the Gist with other users and let them download your settings.
+7. Supports GitHub Enterprise
+
+同步的内容包括
+
+1. Settings File
+2. Keybinding File
+3. Launch File
+4. Snippets Folder
+5. VSCode Extensions Settings
+6. Workspaces Folder
+
+
+快捷键
+
+```
+Upload Key : Shift + Alt + U
+Download Key : Shift + Alt + D
+```
+
+相关配置
+
+```json
+"sync.gist": "0c929b1a6c51015cdc9e0fe2e369ea4c",
+"sync.lastUpload": "2018-03-04T14:21:39.841Z",
+"sync.autoDownload": false,
+"sync.autoUpload": false,
+"sync.lastDownload": "2018-03-04T14:21:39.841Z",
+"sync.forceDownload": true,
+"sync.host": "",
+"sync.pathPrefix": "",
+"sync.quietSync": false,
+"sync.askGistName": false,
+"sync.removeExtensions": true,
+"sync.syncExtensions": true
+```
 
 
 ## JSON 相关插件
@@ -652,6 +722,14 @@ Python: Select Linter
 类似的插件有 [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)，个人更喜欢前者。
 
 
+### AutoFileName (JerryHong)
+
+[AutoFileName](https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename) 自动完成项目中的路径。
+
+![AutoFileName](@/img/AutoFileName.png =128x)
+
+
+
 ### Auto Close Tag (Jun Han)
 
 如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
@@ -779,4 +857,9 @@ int    errornumber;   // Is also ok
 - [Vue 2 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
 - [canvas-snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.canvas-snippets)
 - [vscode-wechat](https://marketplace.visualstudio.com/items?itemName=qinjia.vscode-wechat)
+
+
+## 相关文章
+
+[Visual Studio Code 最好的功能、插件和设置](http://www.css88.com/archives/8144)
 

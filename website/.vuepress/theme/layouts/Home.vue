@@ -3,7 +3,7 @@
     .title
       img(v-if="data.titleImage" :src="$withBase(data.titleImage)" alt="title")
       h1 {{ data.title || $title }}
-      p.description {{ data.description || $description || 'Welcome to your xiaoyulive.top' }}
+      p.description {{ data.description || $description || 'Welcome to xiaoyulive.top' }}
       .action(v-if="data.actionText && data.actionLink && false")
         NavLink.action-button(:item="actionLink")
     .features(v-if="data.features && data.features.length")

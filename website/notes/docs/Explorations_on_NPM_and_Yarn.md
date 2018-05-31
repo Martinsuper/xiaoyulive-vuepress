@@ -103,9 +103,13 @@ node_modules
 
 注意，需要同时修改环境变量，否则不能在全局使用相关命令
 
+对于Windows自行百度添加到环境变量的方法，Linux使用命令 `export PATH=$PATH:/the/path/to/yarn/global/bin/` 即可。
+
 修改缓存路径使用 `npm config set cache "D:\nodejs\cache"`
 
-设置安装源，例如使用淘宝源: `npm config set registry `
+设置安装源，例如使用淘宝源: `npm config set registry https://registry.npm.taobao.org/`
+
+设置完成后，使用 `npm config get registry` 查看是否生效。
 
 
 ### npm 脚本
@@ -196,6 +200,7 @@ npm 相关文档: [英文文档](https://docs.npmjs.com/cli/)
 - npm: `npm uninstall --save package` 或 `npm uninstall --save-dev package`
 
 
+
 ## npm 与 yarn 的缓存策略对比
 
 ### npm 的缓存策略
@@ -258,6 +263,12 @@ yarn 缓存目录位于 `~/Library/Caches/Yarn` 文件夹中，每个缓存的�
 - `yarn cache clean` 清除所有缓存数据。
 
 yarn 还提供了一些其他改进，例如，它允许合并项目中使用到的所有的包的许可证，这一点让人很高兴。
+
+设置 yarn 缓存目录
+
+```
+yarn config set cache-folder <path>
+```
 
 ---
 
@@ -380,4 +391,9 @@ https://github.com/npm/npm/issues/19989
 
 [^5]: [Yarn vs npm: 你需要知道的一切](http://web.jobbole.com/88459/)
 
+[yarn初学](https://www.cnblogs.com/dapenglalala/p/6511557.html)
+
+[更改npm全局模块和cache默认安装位置](https://blog.csdn.net/friendan/article/details/51736231)
+
+[npm - 换淘宝源](https://blog.csdn.net/jeikerxiao/article/details/53887524)
 
