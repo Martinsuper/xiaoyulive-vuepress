@@ -46,7 +46,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 将 Git 的功能添加到 Visual Studio Code 中。它帮助您可视化代码的作者，通过Git的注释和代码的视角，无缝地导航和探索 Git 仓库，通过强大的比较命令获得有价值的见解，等等。
 
-![GitLens](@/img/gitlens-logo.png)
+![GitLens](@/img/vscode/gitlens-logo.png)
 
 常用配置
 
@@ -64,7 +64,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 
 [Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline) 在浏览器窗格中显示一个代码大纲树。
 
-![Code-Outline](@/img/Code-Outline.png =128x)
+![Code-Outline](@/img/vscode/Code-Outline.png =128x)
 
 常用配置
 
@@ -80,7 +80,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 
 [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 可以运行 C, C++, Java, JS, PHP, Python...
 
-![](@/img/Code_Runner.png =128x)
+![](@/img/vscode/Code_Runner.png =128x)
 
 
 ### Document This (Joel Day)
@@ -96,7 +96,7 @@ C:\Users\Quanzaiyu\.vscode\extensions
 
 [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines) 可以对选中的代码行进行排序。也提供不区分大小写、反向和唯一等排序功能。
 
-![Sort_Lines](@/img/Sort_Lines.png =128x)
+![Sort_Lines](@/img/vscode/Sort_Lines.png =128x)
 
 相关命令
 
@@ -109,14 +109,14 @@ Sort lines
 
 [Wallaby.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode) 是一个高级的连续测试运行器，当您对您正在工作的文件进行测试时，它会在你的编辑器中创建通过测试或测试失败的视觉反馈。
 
-![Wallaby.js](@/img/Wallaby.js.png =128x)
+![Wallaby.js](@/img/vscode/Wallaby.js.png =128x)
 
 
 ### Sync Settings (Shan Ali Khan)
 
 [Sync Settings](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 是一个设置同步插件，你很有可能在多台电脑上进行编码工作。此插件使得在电脑上移植你的插件和设置是轻而易举的事。
 
-![Settings_Sync](@/img/Settings_Sync.png =128x)
+![Settings_Sync](@/img/vscode/Settings_Sync.png =128x)
 
 特性
 
@@ -171,7 +171,7 @@ Download Key : Shift + Alt + D
 
 `{ foo:"bar", red:1, }` 将转化为 `{ "foo":"bar", "red":1 }`
 
-![fix_json](@/img/fix_json.png =128x)
+![fix_json](@/img/vscode/fix_json.png =128x)
 
 相关命令
 
@@ -228,7 +228,7 @@ Paste JSON as Code
 
 [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) 允许将匹配的括号标识为颜色。用户可以定义要匹配的字符，以及要使用哪些颜色。
 
-![Bracket_Pair_Colorizer](@/img/Bracket_Pair_Colorizer.png =128x)
+![Bracket_Pair_Colorizer](@/img/vscode/Bracket_Pair_Colorizer.png =128x)
 
 相关配置
 
@@ -253,7 +253,7 @@ Paste JSON as Code
 
 [Subtle Brackets](https://marketplace.visualstudio.com/items?itemName=rafamel.subtle-brackets) 可以在匹配的括号添加下划线。
 
-![Subtle_Brackets](@/img/Subtle_Brackets.png)
+![Subtle_Brackets](@/img/vscode/Subtle_Brackets.png =128x)
 
 相关配置
 
@@ -268,14 +268,14 @@ subtleBrackets.bracketPairs: ["{}", "[]", "()"]
 
 [file-size](https://marketplace.visualstudio.com/items?itemName=zh9528.file-size) 会在状态栏显示当前文件大小。
 
-![file-size](@/img/file-size.png =128x)
+![file-size](@/img/vscode/file-size.png =128x)
 
 
 ### Active File In StatusBar (RoscoP)
 
 [Active File In StatusBar](https://marketplace.visualstudio.com/items?itemName=RoscoP.ActiveFileInStatusBar) 将在状态栏显示当前文件的完整路径。
 
-![Active_File_In_StatusBar](@/img/Active_File_In_StatusBar.png)
+![Active_File_In_StatusBar](@/img/vscode/Active_File_In_StatusBar.png =128x)
 
 相关配置
 
@@ -294,7 +294,7 @@ subtleBrackets.bracketPairs: ["{}", "[]", "()"]
 
 [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 用于在 VSCode 中管理项目。轻松地访问和切换它们。您可以定义自己喜欢的项目，并自动检测 VSCode 项目、Git、Mercurial 和 SVN 储存库。
 
-![project_manager](@/img/project_manager.png =128x)
+![project_manager](@/img/vscode/project_manager.png =128x)
 
 常用命令
 
@@ -335,7 +335,7 @@ Project Manager: Save Project
 
 [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager) (GPM) 允许直接从 VSCode 窗口打开一个 Git 存储库的新窗口。
 
-![GPM](@/img/GPM.png =128x)
+![GPM](@/img/vscode/GPM.png =128x)
 
 常用命令
 
@@ -359,7 +359,7 @@ GPM: Refresh Projects
 
 [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) 可以快速搜索您的工作空间，以获取注释标签，例如 TODO 和 FIXME，并在浏览器窗格中的树视图中显示它们。
 
-![Todo_Tree](@/img/Todo_Tree.png =128x)
+![Todo_Tree](@/img/vscode/Todo_Tree.png =128x)
 
 常用配置
 
@@ -373,14 +373,14 @@ todo‑tree.showInExplorer: true
 
 [TODO-Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) 在编辑器中高亮显示 `TODO:`、`FIXME:`。
 
-![TODO_Highlight](@/img/TODO_Highlight.png =128x)
+![TODO_Highlight](@/img/vscode/TODO_Highlight.png =128x)
 
 
 ### Bookmarks (Alessandro Fragnani)
 
 [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) 在编辑器中标记行并轻松跳转到它们。
 
-![bookmarks](@/img/bookmarks.png =128x)
+![bookmarks](@/img/vscode/bookmarks.png =128x)
 
 常用命令
 
@@ -415,7 +415,7 @@ Bookmarks (Selection): Shrink Selection Shrink
 
 [Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus) 轻松地管理待办事项列表。功能强大，易于使用和定制。
 
-![Todo+](@/img/Todo+.png =128x)
+![Todo+](@/img/vscode/Todo+.png =128x)
 
 相关命令
 
@@ -457,7 +457,7 @@ Bookmarks (Selection): Shrink Selection Shrink
 
 [VS Notes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes) 是一个简单的工具，它负责创建和管理纯文本注释.
 
-![](@/img/VS_Notes.png =128x)
+![](@/img/vscode/VS_Notes.png =128x)
 
 
 
@@ -467,7 +467,7 @@ Bookmarks (Selection): Shrink Selection Shrink
 
 [Background](https://marketplace.visualstudio.com/items?itemName=shalldie.background) 在 vscode 中添加一个可爱的背景图像。
 
-![background](@/img/background.png =128x)
+![background](@/img/vscode/background.png =128x)
 
 ::: warning 注意
 此插件是通过修改 vscode 的 css 文件的方式运行，如果在 vscode 中提示软件已损坏，可以点击【不再显示】。
@@ -494,15 +494,15 @@ Bookmarks (Selection): Shrink Selection Shrink
 
 个人非常喜欢的一款主题: [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)。
 
-![](@/img/Material_Icon_Theme.png =128x)
+![](@/img/vscode/Material_Icon_Theme.png =128x)
 
 File Icons
 
-![](@/img/fileIcons.png)
+![](@/img/vscode/fileIcons.png)
 
 Folder Icons
 
-![](@/img/folderIcons.png)
+![](@/img/vscode/folderIcons.png)
 
 配置主题颜色:
 
@@ -522,7 +522,7 @@ Material Icons:
 
 [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) 为输出/调试/扩展面板和`*.log` 文件添加语法着色。
 
-![Output_Colorizer](@/img/Output_Colorizer.png =128x)
+![Output_Colorizer](@/img/vscode/Output_Colorizer.png =128x)
 
 
 ## 语言支持
@@ -531,7 +531,7 @@ Material Icons:
 
 所有需要的Markdown 功能都在 [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (键盘快捷键，目录大纲，自动预览等)。
 
-![markdown_all_in_one](@/img/markdown_all_in_one.png =128x)
+![markdown_all_in_one](@/img/vscode/markdown_all_in_one.png =128x)
 
 常用快捷键
 
@@ -565,27 +565,27 @@ backspace 反缩进
 
 参考文档: [官方文档](https://vuejs.github.io/vetur/setup.html)、[veturpack](https://github.com/octref/veturpack)、[Vue Language Server](https://github.com/vuejs/vetur/tree/master/server)
 
-![vetur](@/img/vetur.png =128x)
+![vetur](@/img/vscode/vetur.png =128x)
 
 ### Sass (Robin Bentley)
 
 [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) 提供 Sass 语法高亮、自动完成、snippets 的支持。
 
-![sass](@/img/sass.png =128x)
+![sass](@/img/vscode/sass.png =128x)
 
 
 ### Language Stylus (sysoev)
 
 [Language Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) 提供 Stylus 语法高亮、自动完成、snippets 的支持。
 
-![stylus](@/img/stylus.png =128x)
+![stylus](@/img/vscode/stylus.png =128x)
 
 
 ### npm (egamma)
 
 [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) 支持在包中运行定义的 npm 脚本，并根据 package.json 中定义的依赖项对已安装的模块进行验证。
 
-![npm](@/img/npm.png =128x)
+![npm](@/img/vscode/npm.png =128x)
 
 常用设置
 
@@ -598,7 +598,7 @@ npm.runInTerminal 定义命令是否在终端窗口中运行，或者是显示�
 
 [minapp](https://marketplace.visualstudio.com/items?itemName=qiu8310.minapp-vscode) 微信小程序标签、属性的智能补全。
 
-![minapp](@/img/minapp.png =128x)
+![minapp](@/img/vscode/minapp.png =128x)
 
 相关插件:
 
@@ -615,7 +615,7 @@ npm.runInTerminal 定义命令是否在终端窗口中运行，或者是显示�
 
 [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 提供 python 的语法支持、单元测试、调试、验证、snippets、IntelliSense等。
 
-![python](@/img/python.png =128x)
+![python](@/img/vscode/python.png =128x)
 
 相关命令
 
@@ -632,7 +632,7 @@ Python: Select Linter
 
 [weex](https://marketplace.visualstudio.com/items?itemName=jaylinwang.weex) 提供 weex 语法支持。
 
-![weex](@/img/weex.png = 128x)
+![weex](@/img/vscode/weex.png = 128x)
 
 
 ### XML Tools
@@ -653,7 +653,7 @@ Python: Select Linter
 
 [Npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) 用于智能提示 NPM 模块。
 
-![npm_intellisense](@/img/npm_intellisense.png =128x)
+![npm_intellisense](@/img/vscode/npm_intellisense.png =128x)
 
 相关配置
 
@@ -670,7 +670,7 @@ Python: Select Linter
 
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) 用于自动完成文件名。
 
-![path_intellisense](@/img/path_intellisense.png =128x)
+![path_intellisense](@/img/vscode/path_intellisense.png =128x)
 
 相关配置
 
@@ -689,13 +689,13 @@ Python: Select Linter
 
 [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense) 需要安装至少 PHP7 并将之添加至环境变量，或者设置 `php.executablePath`。
 
-![PHP_IntelliSense](@/img/PHP_IntelliSense.png =128x)
+![PHP_IntelliSense](@/img/vscode/PHP_IntelliSense.png =128x)
 
 ### Less IntelliSense (mrmlnc)
 
 [Less IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-less) 将检测整个工作空间的 less 文件，并获取其 Variables and Mixins。
 
-![Less_IntelliSense](@/img/Less_IntelliSense.png =128x)
+![Less_IntelliSense](@/img/vscode/Less_IntelliSense.png =128x)
 
 
 ### HTML CSS Support (ecmel)
@@ -706,7 +706,7 @@ Python: Select Linter
 - 检测当前 workspace 下的 css、scss 文件
 - 支持远程 css 检测
 
-![HTML_CSS_Support](@/img/HTML_CSS_Support.png =128x)
+![HTML_CSS_Support](@/img/vscode/HTML_CSS_Support.png =128x)
 
 相关配置
 
@@ -726,13 +726,13 @@ Python: Select Linter
 
 [AutoFileName](https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename) 自动完成项目中的路径。
 
-![AutoFileName](@/img/AutoFileName.png =128x)
+![AutoFileName](@/img/vscode/AutoFileName.png =128x)
 
 
 
 ### Auto Close Tag (Jun Han)
 
-如命，[Auto Close Tag](@/img/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
+如命，[Auto Close Tag](@/img/vscode/auto_close_tag.png =128x), 自动结束 HTML/XML 标签。
 
 配置
 
@@ -748,7 +748,7 @@ Python: Select Linter
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 自动重命名成对的HTML/XML标签。
 
-![](@/img/Auto_Rename_Tag.png =128x)
+![](@/img/vscode/Auto_Rename_Tag.png =128x)
 
 相关配置:
 
@@ -763,7 +763,7 @@ Python: Select Linter
 
 [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) 可以很方便地在 VSCode 中输入表情符号。
 
-![emojisense](@/img/emojisense.png =128x)
+![emojisense](@/img/vscode/emojisense.png =128x)
 
 相关配置
 
@@ -777,7 +777,7 @@ Python: Select Linter
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 参见文档: [英文文档](https://eslint.org/) 、 [中文文档](http://eslint.cn/)
 
-![eslint](@/img/eslint.png =128x)
+![eslint](@/img/vscode/eslint.png =128x)
 
 相关配置
 
@@ -790,14 +790,14 @@ Python: Select Linter
 
 [TSlint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) 参考文档: [英文文档](https://palantir.github.io/tslint/) 、 [GitHub](https://github.com/palantir/tslint)
 
-![tslint](@/img/tslint.png =128x)
+![tslint](@/img/vscode/tslint.png =128x)
 
 
 ### Code Spell Checker (Street Side Software)
 
 [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) 会做拼写检查，支持驼峰命名(camelCase)和下划线风格(snake_case_words)的拼写。
 
-![Code_Spell_Checker](@/img/Code_Spell_Checker.png =128x)
+![Code_Spell_Checker](@/img/vscode/Code_Spell_Checker.png =128x)
 
 注释开启和关闭拼写检查
 
