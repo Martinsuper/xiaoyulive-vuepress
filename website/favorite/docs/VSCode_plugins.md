@@ -163,6 +163,7 @@ Download Key : Shift + Alt + D
 ```
 
 
+
 ## JSON 相关插件
 
 ### Fix Json (Oliver Sturm)
@@ -566,6 +567,16 @@ backspace 反缩进
 参考文档: [官方文档](https://vuejs.github.io/vetur/setup.html)、[veturpack](https://github.com/octref/veturpack)、[Vue Language Server](https://github.com/vuejs/vetur/tree/master/server)
 
 ![vetur](@/img/vscode/vetur.png =128x)
+
+
+
+### VueHelper (oysun)
+
+[VueHelper](https://marketplace.visualstudio.com/items?itemName=oysun.vuehelper)
+
+![VueHelper](@/img/vscode/VueHelper.jpg =128x)
+
+
 
 ### Sass (Robin Bentley)
 
