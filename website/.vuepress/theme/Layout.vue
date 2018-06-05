@@ -11,7 +11,8 @@
       slot(name="sidebar-bottom" slot="bottom")
     .custom-layout(v-if="$page.frontmatter.layout")
       component(:is="$page.frontmatter.layout")
-    Home(v-else-if="$page.frontmatter.home")
+    keep-alive(v-else-if="$page.frontmatter.home")
+      Home
     Page(v-else :sidebar-items="sidebarItems")
       slot(name="page-top" slot="top")
       slot(name="page-bottom" slot="bottom")

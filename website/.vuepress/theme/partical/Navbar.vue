@@ -19,6 +19,9 @@
 
 <script>
 export default {
+  created () {
+    console.log(this.$site)
+  },
   computed: {
     algolia () {
       return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}

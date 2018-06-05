@@ -1,8 +1,8 @@
 <template lang='pug'>
   .home
     .title
-      img(v-if="data.titleImage" :src="$withBase(data.titleImage)" alt="title")
-      h1 {{ data.title || $title }}
+      //- img(v-if="data.titleImage" :src="$withBase(data.titleImage)" alt="title")
+      //- h1 {{ data.title || $title }}
       p.description {{ data.description || $description || 'Welcome to xiaoyulive.top' }}
       .action(v-if="data.actionText && data.actionLink && false")
         NavLink.action-button(:item="actionLink")
@@ -123,6 +123,7 @@ export default {
         width 100%
         height 100%
         filter opacity(.6)
+        background-color #ccc
 
 @media (max-width: $MQMobile)
   .home

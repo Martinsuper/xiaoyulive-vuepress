@@ -27,6 +27,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }]
   ],
   themeConfig: {
+    logo: '/logo.png',
     locales: {
       '/': {
         nav: [
