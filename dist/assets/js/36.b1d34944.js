@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{250:function(t,e,s){"use strict";s.r(e);var i={props:["href","title"]},n=s(1),r=Object(n.a)(i,function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("a",{attrs:{href:this.$ensureExt(this.href)}},[this._v(this._s(this.title))])])},[],!1,null,null,null);e.default=r.exports}}]);
