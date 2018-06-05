@@ -12,8 +12,8 @@ features:
 - title: 我的博客之旅
   details: 探索新世界的奥秘
   link: /articles/docs/My_blog_journey
-- title: 我的角色转变
-  details: 从后端到前端
+- title: 从后端到前端
+  details: 我的角色转变
   link: /articles/docs/From_the_Backend_to_the_Frontend
 ---
 

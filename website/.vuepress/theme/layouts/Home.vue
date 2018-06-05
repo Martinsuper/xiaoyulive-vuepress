@@ -8,7 +8,7 @@
         NavLink.action-button(:item="actionLink")
     .features(v-if="data.features && data.features.length")
       .feature(v-for="feature in data.features")
-        a(href='feature.link')
+        router-link(:to="$ensureExt(feature.link)")
           .coverContent
             h2 {{ feature.title }}
             p {{ feature.details }}
