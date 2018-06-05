@@ -12,9 +12,9 @@ features:
 - title: 我的博客之旅
   details: 探索新世界的奥秘
   link: /articles/docs/My_blog_journey
-- title: 从后端到前端
-  details: 我的角色转变
-  link: /articles/docs/From_the_Backend_to_the_Frontend
+- title: 使用不同的托管平台部署站点
+  details: 创建专属于自己的网站
+  link: /notes/docs/Deploy_with_Different_Platforms
 ---
 
 

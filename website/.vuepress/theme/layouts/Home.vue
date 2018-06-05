@@ -48,11 +48,13 @@ export default {
   .title
     text-align center
     img
+      max-width 280px
       max-height 280px
       display block
       margin 3rem auto 1.5rem
+      border-radius 1em
     h1
-      font-size 3rem
+      font-size 2.4rem
     h1, .description, .action
       margin 1.8rem auto
     .description
@@ -99,12 +101,12 @@ export default {
       left 0
       right 0
       height 100%
-      top 70%
+      top 74%
       background-color rgba(0,0,0,.4)
       h2, p
         padding 0 .8rem
       h2
-        font-size 1.4rem
+        font-size 1.2rem
         font-weight 500
         border-bottom none
         padding-bottom 0
