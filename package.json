@@ -8,7 +8,10 @@
     "dev": "vuepress dev website",
     "build": "vuepress build website",
     "pull": "git pull gitee master",
-    "push": "git add * && git commit -am 0 && git push gitee master"
+    "push": "yarn push:all",
+    "push:all": "yarn push:gitee && yarn push:github",
+    "push:gitee": "git add * && git commit -am 0 && git push gitee master",
+    "push:github": "git add * && git commit -am 0 && git push origin master"
   },
   "author": "",
   "license": "ISC",
