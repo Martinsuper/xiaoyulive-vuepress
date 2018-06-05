@@ -93,8 +93,8 @@ export default {
     margin-bottom 1em
     &.feature:hover .coverContent
       top 0
-      transition 1s top ease
     .coverContent
+      transition 1s top ease
       position absolute
       z-index 1
       overflow hidden
