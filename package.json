@@ -7,8 +7,8 @@
     "start": "yarn dev",
     "dev": "vuepress dev website",
     "build": "vuepress build website",
-    "pull": "git pull origin master",
-    "push": "git add * && git commit -am 0 && git push origin master"
+    "pull": "git pull gitee master",
+    "push": "git add * && git commit -am 0 && git push gitee master"
   },
   "author": "",
   "license": "ISC",
