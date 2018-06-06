@@ -76,3 +76,20 @@ datetime: 2018-06-06
 
 [Android开发中文站](http://www.androidchina.net/)
 
+
+---
+
+## 开源系统
+
+### 博客系统
+
+[Hexo](https://hexo.io/)、[中文镜像 - Bootcss](https://hexo.bootcss.com/)、[GitHub](https://github.com/hexojs/hexo)
+
+[Jekyll](https://jekyllrb.com/)、[中文镜像 - Bootcss](https://www.jekyll.com.cn/)、[GitHub](https://github.com/jekyll/jekyll)
+
+[Vuepress](https://vuepress.vuejs.org/)、[中文镜像 - Bootcss](https://www.vuepress.cn/)、[GitHub](https://github.com/vuejs/vuepress)
+
+[WordPress](https://wordpress.org)、[Download](https://wordpress.org/download/)
+
+[Emlog](http://www.emlog.net/)
+

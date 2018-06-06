@@ -93,7 +93,7 @@ Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScrip
 
 ![](@/img/logo/bootstrap.jpg =200x)
 
-[官网](http://www.bootcss.com/)
+[官网](http://www.bootcss.com/)、[GitHub](https://github.com/twbs/bootstrap)
 
 
 ---
