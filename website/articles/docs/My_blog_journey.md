@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 sidebarDepth: 0
+datetime: 2018-05-12
 ---
 
 # 我的博客之旅 - 探索新世界的奥秘

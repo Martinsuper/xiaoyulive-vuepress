@@ -10,9 +10,6 @@
   max-width $navWidth
   min-height: 1000px;
   margin 0 auto;
+  padding 0 1.5rem
 }
-
-@media (max-width: $MQMobile)
-  .container
-    padding 0 1.5rem
 </style>
