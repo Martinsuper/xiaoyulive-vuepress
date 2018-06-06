@@ -156,6 +156,15 @@ GitHub: <aLink title='https://github.com/ElemeFE/vue-amap' />
 
 ## 脚手架
 
+- [vue-pwa-boilerplate](https://github.com/vuejs-templates/pwa)
+
+- [vue-webpack-boilerplate](https://github.com/vuejs-templates/webpack)
+- [webpack-simple](https://github.com/vuejs-templates/webpack-simple)
+
+- [vue-browserify-boilerplate](https://github.com/vuejs-templates/browserify)
+- [browserify-simple](https://github.com/vuejs-templates/browserify-simple)
+
+- [vue-simple-boilerplate](https://github.com/vuejs-templates/simple)
 
 
 ## 相关资源
@@ -187,3 +196,22 @@ VuePress 由两部分组成：一个以 Vue 驱动的主题系统的简约静态
 GitHub: <aLink title='https://github.com/vuejs/vuepress' />
 
 DocsChina: <aLink title='https://vuepress.docschina.org' />
+
+---
+
+### Nuxt
+
+Nuxt 是一个 Vue.js 通用应用框架。
+
+![](@/img/logo/NUXT.png =150x)
+
+官网: <aLink title='https://github.com/nuxt/nuxt.js' />
+
+中文官网: <aLink title='https://zh.nuxtjs.org' />
+
+GitHub: <aLink title='https://github.com/nuxt/nuxt.js' />
+
+
+
+
+
