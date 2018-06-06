@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 sidebarDepth: 2
+datetime: 2018-06-04
 ---
 
 # Vue 数据更新视图未同步渲染

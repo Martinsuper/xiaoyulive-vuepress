@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 sidebarDepth: 2
+datetime: 2018-05-28
 ---
 
 # 关于 npm 与 yarn 等一些 node 包管理工具的一些探索

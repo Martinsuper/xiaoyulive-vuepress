@@ -1,6 +1,7 @@
 ---
 sidebar: auto
 sidebarDepth: 2
+datetime: 2018-05-17
 ---
 
 # 优质的 VSCode 插件
