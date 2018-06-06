@@ -59,7 +59,7 @@ sidebarDepth: 3
 
 [潭州课堂-在线直播教学平台|潭州课堂-互联网在线教育](https://www.shiguangkey.com/)
 
-[https://huke88.com/](虎课网 - 原创在线学习网站！|PS教程,AI教程)
+[虎课网-原创在线学习网站！|PS教程,AI教程](https://huke88.com/)
 
 
 ---
