@@ -16,7 +16,7 @@ datetime: 2018-06-06
 
 查了一些资料，发现 Vue 中提供 `keep-alive` 组件，就可实现这一需求。
 
-## 使用 keep-alive
+## keep-alive
 
 通常情况下，一个 Vue 组件都会依次执行其生命周期函数，也就是 `beforeCreate` - `created` - `beforeMount` - `mounted` - `beforeUpdate` - `updated` - `beforeDestory` - `destoryed`。
 
@@ -132,9 +132,75 @@ updated
 
 可以看到，只有第一次进入的时候，`create` 和 `mount` 相关的生命周期函数才执行，而 `destroy` 相关的生命周期函数始终没有执行，说明此组件始终缓存着，没有销毁。
 
+## 在 component 和 router-view 中
+
+有了上面的一些基础知识，在项目中使用起来就方便许多了，官网和很多资料都有如下的一些用法:
+
+```html
+<keep-alive>
+  <component :is="view"></component>
+</keep-alive>
+```
+
+```html
+<keep-alive>
+  <router-view></router-view>  
+</keep-alive>
+```
+
+不过，我个人不建议直接在 `App.vue` 的 router-view 中使用，这样可能会将所有的组件全部缓存，以致有的时候不能达到预期效果。缓存虽好，按需取之即可，不要盲目使用。
+
+
+## 在路由中配置
+
+一种比较合适的方法是，直接在路由中进行配置 `meta.keepAlive`，这样真正做到了按需取之。
+
+```js
+{  
+  name: 'index',  
+  path: '/index',  
+  title: '主页',  
+  component(resolve) {  
+    require(['views/index.vue'], resolve)  
+  },  
+  meta: {  
+    pageTitle: '主页',  
+    keepAlive: true  
+  }  
+}
+```
+
+但是，这样的话，不管是从首页跳到其他页面，还是从其他页面跳到首页，只要经过第一次渲染，之后就再也不会重新渲染了。
+
+而预期的效果是，只有在点击返回的时候，才不需要重新渲染，因此可以在其他页面中配置路由钩子:
+
+```js
+export default {
+  ...
+  beforeRouteLeave (to, from, next) {
+    if (to.path == '/index') {  
+      to.meta.keepAlive = true
+    } else {  
+      to.meta.keepAlive = false
+    }  
+    next()
+  }
+  ...
+}
+```
+
+注意： 这里使用了 `beforeRouterLeave(to,from,next){}`，它是 `methods` 平级的，必须写在有配置了路由的页面上才有效的，最开始我想写在 `App.vue` 页面上，发现根本就不执行的！
+
 
 ## 参考资料
 
 [实例生命周期钩子 - vue.js](https://cn.vuejs.org/v2/guide/instance.html#%E5%AE%9E%E4%BE%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90)
 
-[keep-alive - vue.js](https://cn.vuejs.org/v2/api/#keep-alive)
+[在动态组件上使用 keep-alive - vue.js](https://cn.vuejs.org/v2/guide/components-dynamic-async.html#%E5%9C%A8%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6%E4%B8%8A%E4%BD%BF%E7%94%A8-keep-alive)
+
+[keep-alive - API - vue.js](https://cn.vuejs.org/v2/api/#keep-alive)
+
+[vue单页 使用keep-alive页面返回不刷新](https://blog.csdn.net/leileibrother/article/details/79376502)
+
+[Vue如何做到前进刷新数据,后退不刷新数据呢?](https://segmentfault.com/q/1010000007555953/a-1020000007556747)
+
