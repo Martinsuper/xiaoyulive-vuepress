@@ -4,20 +4,25 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   )
-    Navbar(v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar")
-    .sidebar-mask(@click="toggleSidebar(false)")
-    Sidebar(:items="sidebarItems" @toggle-sidebar="toggleSidebar")
-      slot(name="sidebar-top" slot="top")
-      slot(name="sidebar-bottom" slot="bottom")
-    .custom-layout(v-if="$page.frontmatter.layout")
-      component(:is="$page.frontmatter.layout")
+    keep-alive
+      Navbar(v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar")
+      .sidebar-mask(@click="toggleSidebar(false)")
+    keep-alive
+      Sidebar(:items="sidebarItems" @toggle-sidebar="toggleSidebar")
+        slot(name="sidebar-top" slot="top")
+        slot(name="sidebar-bottom" slot="bottom")
+    keep-alive(v-if="$page.frontmatter.layout")
+      .custom-layout
+        component(:is="$page.frontmatter.layout")
     keep-alive(v-else-if="$page.frontmatter.home")
       Home
-    Page(v-else :sidebar-items="sidebarItems")
-      slot(name="page-top" slot="top")
-      slot(name="page-bottom" slot="bottom")
-    .footers(v-if="data.footers && data.footers.length")
-      p(v-for='footer in data.footers') {{ footer }}
+    keep-alive(v-else)
+      Page(:sidebar-items="sidebarItems")
+        slot(name="page-top" slot="top")
+        slot(name="page-bottom" slot="bottom")
+    keep-alive
+      .footers(v-if="data.footers && data.footers.length")
+        p(v-for='footer in data.footers') {{ footer }}
 </template>
 
 <script>
