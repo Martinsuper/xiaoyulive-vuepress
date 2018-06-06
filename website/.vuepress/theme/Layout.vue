@@ -20,9 +20,8 @@
       Page(:sidebar-items="sidebarItems")
         slot(name="page-top" slot="top")
         slot(name="page-bottom" slot="bottom")
-    keep-alive
-      .footers(v-if="data.footers && data.footers.length")
-        p(v-for='footer in data.footers') {{ footer }}
+    .footers(v-if="data.footers && data.footers.length")
+      p(v-for='footer in data.footers') {{ footer }}
 </template>
 
 <script>
@@ -149,11 +148,11 @@ export default {
 <style lang="stylus" scoped>
 @import './styles/config.styl'
 .footers
-  position relative
-  z-index 20
   background-color $navBgColor
   padding 2.5rem
   border-top 1px solid $borderColor
   text-align center
   color $navTextColor
+
+
 </style>
