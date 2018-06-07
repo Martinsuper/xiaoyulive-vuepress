@@ -8,6 +8,7 @@ module.exports = {
   title: '小昱个人网站',
   description: '小昱个人网站',
   dest: 'dist',
+  port: 4000,
   configureWebpack: {
     resolve: {
       alias: {

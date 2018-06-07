@@ -4,13 +4,13 @@ sidebarDepth: 2
 datetime: 2017-11-25
 ---
 
-# 使用Hexo搭建静态博客
+# 使用 Hexo 搭建静态博客
 
-> 这不是一个教程，只是记录个人配置Hexo的历程，方便下次使用，最后的参考资料中会有详细的搭建教程。
+> 这不是一个教程，只是记录个人配置 Hexo 的历程，方便下次使用，最后的参考资料中会有详细的搭建教程。
 
 ## Hexo简介
 
-hexo是一款快速、简洁且高效的博客框架，基于node.js构建，速度快，支持Markdown的编写文章，可以一键部署到GitHub，简单方便。参考 : [Hexo中文网站](https://hexo.io/zh-cn/)
+[Hexo](https://hexo.io/zh-cn/) 是一款快速、简洁且高效的博客框架，基于node.js构建，速度快，支持Markdown的编写文章，可以一键部署到GitHub，简单方便。
 
 
 
