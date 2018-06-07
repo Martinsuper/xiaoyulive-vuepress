@@ -1,6 +1,4 @@
 ---
 layout: List
+categoryData: HTML
 ---
-
-# HTML
-

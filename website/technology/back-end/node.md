@@ -1,1 +1,4 @@
-# Node
+---
+layout: List
+categoryData: Node
+---

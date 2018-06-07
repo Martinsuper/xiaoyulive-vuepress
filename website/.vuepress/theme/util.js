@@ -216,10 +216,37 @@ function resolveItem (item, pages, base, isNested) {
   }
 }
 
+// 过滤指定条件的文章
+function documentFilter (filters) {
+  // filters = {path, datetime, category, tag}
+  return this.$site.pages.filter(page => {
+    let path = page.path
+    let datetime = page.frontmatter.datetime ? page.frontmatter.datetime : ''
+    let category = page.frontmatter.category ? page.frontmatter.category : ''
+    let tag = page.frontmatter.tag ? page.frontmatter.tag : ''
+
+    if (filters.path && path) {
+      return path.indexOf(filters.path) > -1
+    }
+    if (filters.datetime && datetime) {
+      return datetime.indexOf(filters.datetime) > -1
+    }
+    if (filters.category && category) {
+      return category.indexOf(filters.category) > -1
+    }
+    if (filters.tag && tag) {
+      return tag.indexOf(filters.tag) > -1
+    }
+  })
+}
+
 export default {
   installArr: [{
     name: '$ensureExt',
     func: ensureExt
+  }, {
+    name: '$documentFilter',
+    func: documentFilter
   }],
   install: function (_Vue) {
     this.installArr.forEach(item => {

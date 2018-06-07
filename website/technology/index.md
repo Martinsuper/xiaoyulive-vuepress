@@ -22,7 +22,7 @@ categoriesData:
     img:  /technology-imgs/html.png
     show: true
 - title: 后端开发
-  show: true
+  show: false
   children:
   - name: PHP
     link: /technology/back-end/php
@@ -37,7 +37,7 @@ categoriesData:
     img:  /technology-imgs/node.jpg
     show: true
 - title: 自动化
-  show: true
+  show: false
   children:
   - name: Webpack
     link: /technology/automation/webpack

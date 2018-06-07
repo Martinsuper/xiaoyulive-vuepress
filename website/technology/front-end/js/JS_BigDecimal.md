@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-06-05
+datetime: '2018-06-05'
+category: JavaScript
 ---
 
 # JavaScript 大数的处理

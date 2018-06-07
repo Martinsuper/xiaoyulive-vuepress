@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 0
-datetime: 2018-06-05
+datetime: '2018-06-05'
+category: 开发笔记
 ---
 
 # 使用不同的托管平台部署站点
@@ -59,7 +60,7 @@ Gitee 不但支持个人站点的部署，除此之外任何托管的项目都�
 
 码云还支持项目的部署，此时只需要使用使用 `http://quanzaiyu.gitee.io/projectName` 即可访问，并为项目指定演示地址。
 
-不过现在我不知道 Gitee 如何进行 CNAME 域名绑定，貌似不支持。 
+不过现在我不知道 Gitee 如何进行 CNAME 域名绑定，貌似不支持。
 
 
 ## Coding Pages

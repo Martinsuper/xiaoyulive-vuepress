@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-12-15
+datetime: '2017-12-15'
+category: JavaScript
 ---
 
 # 深入探索 XMLHttpRequest2
@@ -49,7 +50,7 @@ xhr.onreadystatechange = function () {
 
 1. 判断浏览器是否包含`XMLHttpRequest`对象，再创建一个浏览器对应的`XMLHttpRequest`(IE为`ActiveXObject`)对象
 2. 使用`open`方法打开一个链接，指定请求方式和是否异步请求
-3. 指定`responseType`返回数据类型为`text`，不指定则默认为`empty string` 
+3. 指定`responseType`返回数据类型为`text`，不指定则默认为`empty string`
 4. 使用`send`发送请求
 5. 监听`onreadystatechange`事件，判断其`readyState`是否为4且`status`是否为200，如果是则代表请求成功
 6. 使用`responseText`返回请求的数据
@@ -371,7 +372,7 @@ xhr.onload = function() {
 }
 ```
 
-注意: HTML5直接支持的音频文件类型只有: `mp3`、`ogg`、`wav` 
+注意: HTML5直接支持的音频文件类型只有: `mp3`、`ogg`、`wav`
 
 
 
@@ -397,7 +398,7 @@ xhr.onload = function() {
 }
 ```
 
-注意: HTML5直接支持的视频文件类型只有: `MP4`、`WebM`、`Ogg`  
+注意: HTML5直接支持的视频文件类型只有: `MP4`、`WebM`、`Ogg`
 
 
 
@@ -522,7 +523,7 @@ xhr.onreadystatechange = function () {
 
 其他可能有用的属性还包括:
 
-返回`HTMLCollection`类型的属性: 
+返回`HTMLCollection`类型的属性:
 
 ```
 childNodes、children、images、forms、links、plugins、scripts、embeds
@@ -559,15 +560,15 @@ Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
 ### 在PHP中设置
 
 ```php
-header("Access-Control-Allow-Origin:*"); 
+header("Access-Control-Allow-Origin:*");
 ```
 
 ### 在Apache中设置
 
 ```xml
 <Directory />
-	Options FollowSymLinks 
-	AllowOverride None 
+	Options FollowSymLinks
+	AllowOverride None
 	Header set Access-Control-Allow-Origin *
 </Directory>
 ```
@@ -615,30 +616,30 @@ location / {
 
 ## 参考资料
 
-[XMLHttpRequest2 新技巧](http://blog.csdn.net/hills/article/details/41246939) 
+[XMLHttpRequest2 新技巧](http://blog.csdn.net/hills/article/details/41246939)
 
-[XML DOM - XMLHttpRequest 对象](http://www.w3school.com.cn/xmldom/dom_http.asp) 
+[XML DOM - XMLHttpRequest 对象](http://www.w3school.com.cn/xmldom/dom_http.asp)
 
-[史上最全的AJAX之XMLHttpRequest方法和属性详解](http://blog.csdn.net/huang_cai_yuan/article/details/54881407) 
+[史上最全的AJAX之XMLHttpRequest方法和属性详解](http://blog.csdn.net/huang_cai_yuan/article/details/54881407)
 
-[理解DOMString、Document、FormData、Blob、File、ArrayBuffer数据类型](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/) 
+[理解DOMString、Document、FormData、Blob、File、ArrayBuffer数据类型](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/)
 
-[Ajax之不可或缺的setRequestHeader()](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/) 
+[Ajax之不可或缺的setRequestHeader()](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/)
 
-[XMLHTTP中setRequestHeader参数问题](http://blog.csdn.net/iamduoluo/article/details/7215639) 
+[XMLHTTP中setRequestHeader参数问题](http://blog.csdn.net/iamduoluo/article/details/7215639)
 
-[readyState与status](http://www.cnblogs.com/zhaojing-0504/p/5971330.html) 
+[readyState与status](http://www.cnblogs.com/zhaojing-0504/p/5971330.html)
 
-[FormData 对象的使用](https://developer.mozilla.org/zh-CN/docs/Web/API/FormData/Using_FormData_Objects) 
+[FormData 对象的使用](https://developer.mozilla.org/zh-CN/docs/Web/API/FormData/Using_FormData_Objects)
 
-[Window.URL](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/URL) 
+[Window.URL](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/URL)
 
-[HTTP访问控制（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS) 
+[HTTP访问控制（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 
-[跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html) 
+[跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
 
-[CORS 跨域 实现思路及相关解决方案](http://www.cnblogs.com/sloong/p/cors.html) 
+[CORS 跨域 实现思路及相关解决方案](http://www.cnblogs.com/sloong/p/cors.html)
 
-[Apache2 同源策略解决方案 - 配置 CORS](http://blog.csdn.net/lzhlzz/article/details/53302863) 
+[Apache2 同源策略解决方案 - 配置 CORS](http://blog.csdn.net/lzhlzz/article/details/53302863)
 
-[HTML5 Blob与ArrayBuffer、TypeArray和字符串String之间转换](http://www.cnblogs.com/tianma3798/p/5834598.html) 
+[HTML5 Blob与ArrayBuffer、TypeArray和字符串String之间转换](http://www.cnblogs.com/tianma3798/p/5834598.html)

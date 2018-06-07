@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-12-13
+datetime: '2017-12-13'
+category: 开发笔记
 ---
 
 # 玩转交互式命令行
@@ -151,7 +152,7 @@ for i in range(16):
 
 ## 参考资料
 
-[WeChat: 震惊！原来命令行还可以这么玩？！](http://mp.weixin.qq.com/s/PrYBXRoUApbcalaIgY7LPQ) 
+[WeChat: 震惊！原来命令行还可以这么玩？！](http://mp.weixin.qq.com/s/PrYBXRoUApbcalaIgY7LPQ)
 
 [stty的用法及解析--escape sequence code的用法](http://blog.csdn.net/justheretobe/article/details/7259718)
 

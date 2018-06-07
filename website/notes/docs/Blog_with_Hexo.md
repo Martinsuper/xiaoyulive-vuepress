@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-11-25
+datetime: '2017-11-25'
+category: 开发笔记
 ---
 
 # 使用 Hexo 搭建静态博客
@@ -102,7 +103,7 @@ deploy:
 
 根据提示，`deprecated`，弃用了，说明前面那个应该是个方法，这个方法在node当中弃用了。明显就是Hexo还在继续使用这个已经被弃用的方法。
 
-解决方案: `npm install hexo-fs --save` 更新一下`hexo-fs`插件。[参考](http://www.abrocks.com/2017/06/17/node8.0%E6%96%B9%E6%B3%95%E5%BC%83%E7%94%A8%E5%A4%84%E7%90%86/) 
+解决方案: `npm install hexo-fs --save` 更新一下`hexo-fs`插件。[参考](http://www.abrocks.com/2017/06/17/node8.0%E6%96%B9%E6%B3%95%E5%BC%83%E7%94%A8%E5%A4%84%E7%90%86/)
 
 > **Error**: Deployer not found : github,
 

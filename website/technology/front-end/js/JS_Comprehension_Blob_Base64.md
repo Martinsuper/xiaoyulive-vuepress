@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-12-13
+datetime: '2017-12-13'
+category: JavaScript
 ---
 
 # 深入理解 Blob、Base64 及其转化
@@ -12,7 +13,7 @@ datetime: 2017-12-13
 
 处理这个格式花费了大量功夫，想了很多办法，比如前端上传前类型转换、后端上传后类型转换、寻找可以播放`amr` 格式的插件等等，折腾了好久。由于是用`Vue`进行开发的，之前想用`MUI`集成的`H5+`进行播放也不能实现(必须打包成APP才行，需要HBuilder的基座支持)。当时找了一个名叫`amrnb.js`(amr牛逼啊，哈哈，开玩笑的，全称为: Adaptive Multi Rate-Narrow Band Speech Codec，用C++进行开发的)的插件，的确可以做到播放和转化`amr`格式，但是文件太大，光是压缩后的文件都接近500k，果断放弃了。
 
-最后想到了将多媒体文件转化为`Base64`进行使用，但如何将服务器中的文件转化为`Base64`又成了问题，`FileReader`可以实现转化，但是JS浏览器端并不能对本地文件系统(或者远程URI进行操作)，只能从`input[type=file]`的输入框读取，`node`虽然可以对文件系统进行操作，但却不能实现在浏览器的转化。郁闷了好几天，后来想到直接通过`ajax`向服务器请求多媒体文件不就可以了，查了些资料就开始操作了。为什么会提到`Blob`呢?是由于请求下来的格式可以指定为此格式，进行操作比较容易。 
+最后想到了将多媒体文件转化为`Base64`进行使用，但如何将服务器中的文件转化为`Base64`又成了问题，`FileReader`可以实现转化，但是JS浏览器端并不能对本地文件系统(或者远程URI进行操作)，只能从`input[type=file]`的输入框读取，`node`虽然可以对文件系统进行操作，但却不能实现在浏览器的转化。郁闷了好几天，后来想到直接通过`ajax`向服务器请求多媒体文件不就可以了，查了些资料就开始操作了。为什么会提到`Blob`呢?是由于请求下来的格式可以指定为此格式，进行操作比较容易。
 
 ## 什么是Blob
 
@@ -104,7 +105,7 @@ img.src = dataurl;
 
 # AMR的处理
 
-至于如何播放amr格式，我做了一个Vue的插件，已上传到个人OSS，有兴趣的童鞋可以自行下载研究。[下载地址](@/res/pVioce.zip) 
+至于如何播放amr格式，我做了一个Vue的插件，已上传到个人OSS，有兴趣的童鞋可以自行下载研究。[下载地址](@/res/pVioce.zip)
 
 使用的话很简单，将插件注册一下就能直接使用:
 
@@ -124,9 +125,9 @@ Vue.component('pVioce', pVioce)
 
 # 参考资料
 
-[AMRNB 与 AMRWB 语音编码标准技术的对比研究](https://blog.csdn.net/lusonglin121/article/details/9333095) 
+[AMRNB 与 AMRWB 语音编码标准技术的对比研究](https://blog.csdn.net/lusonglin121/article/details/9333095)
 
-[[JS进阶] JS 之Blob 对象类型](http://blog.csdn.net/oscar999/article/details/36373183) 
+[[JS进阶] JS 之Blob 对象类型](http://blog.csdn.net/oscar999/article/details/36373183)
 
 [DataURL与File,Blob,canvas对象之间的互相转换的Javascript](http://blog.csdn.net/cuixiping/article/details/45932793) (精)
 

@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-06-07
+datetime: '2018-06-07'
+category: 开发笔记
 ---
 
 # 使用 Vuepress 搭建静态博客

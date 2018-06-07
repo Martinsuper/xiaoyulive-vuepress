@@ -11,9 +11,8 @@
       Sidebar(:items="sidebarItems" @toggle-sidebar="toggleSidebar")
         slot(name="sidebar-top" slot="top")
         slot(name="sidebar-bottom" slot="bottom")
-    keep-alive(v-if="$page.frontmatter.layout")
-      .custom-layout
-        component(:is="$page.frontmatter.layout")
+    .custom-layout(v-if="$page.frontmatter.layout")
+      component(:is="$page.frontmatter.layout")
     keep-alive(v-else-if="$page.frontmatter.home")
       Home
     keep-alive(v-else)

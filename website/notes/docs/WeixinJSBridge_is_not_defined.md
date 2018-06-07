@@ -1,11 +1,12 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-05-27
+datetime: '2018-05-27'
+category: 开发笔记
 ---
 
 
-# 关于 WeixinJSBridge is not defined 的深究及处理方案 
+# 关于 WeixinJSBridge is not defined 的深究及处理方案
 
 ## 问题现象
 
@@ -49,9 +50,9 @@ a) 程序中改善 (试行)
 
 ```js
 if (typeof window.WeixinJSBridge == "undefined"){
-  $(document).on('WeixinJSBridgeReady',function(){ 
-    $('#weiXinPay').click(); 
-    }); } else { 
+  $(document).on('WeixinJSBridgeReady',function(){
+    $('#weiXinPay').click();
+    }); } else {
     $('#weiXinPay').click();
   }
 }

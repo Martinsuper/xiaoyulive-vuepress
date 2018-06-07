@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-06-04
+datetime: '2018-06-04'
+category: Vue
 ---
 
 # Vue 数据更新视图未同步渲染
@@ -78,7 +79,7 @@ export default {
 vm.items[indexOfItem] = newValue
 ```
 
-这样 Vue 不能检测到变动的数组，解决方案为 vm.$set 
+这样 Vue 不能检测到变动的数组，解决方案为 vm.$set
 
 ```js
 vm.$set(vm.items, indexOfItem, newValue)

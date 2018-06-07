@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-12-22
+datetime: '2017-12-22'
+category: 开发笔记
 ---
 
 # 如何发布自己开发的NPM包
@@ -17,7 +18,7 @@ datetime: 2017-12-22
 
 进入网址: https://www.npmjs.com 注册一个npm账号。
 
-本人的npm地址为: [https://www.npmjs.com/~quanzaiyu]( https://www.npmjs.com/~quanzaiyu )  
+本人的npm地址为: [https://www.npmjs.com/~quanzaiyu]( https://www.npmjs.com/~quanzaiyu )
 
 ![](@/img/articles/npm/001.png)
 
@@ -200,14 +201,14 @@ a.hello('qzy')
 
 执行`node index`即可看见输出了`hello qzy`
 
-详细的使用请访问本人的npm: [https://www.npmjs.com/~quanzaiyu]( https://www.npmjs.com/~quanzaiyu )  
+详细的使用请访问本人的npm: [https://www.npmjs.com/~quanzaiyu]( https://www.npmjs.com/~quanzaiyu )
 
 
 
 ## 参考资料
 
-[npm-参考手册](https://segmentfault.com/a/1190000009315989) 
+[npm-参考手册](https://segmentfault.com/a/1190000009315989)
 
-[手把手教你用npm发布一个包](http://www.jianshu.com/p/36d3e0e00157) 
+[手把手教你用npm发布一个包](http://www.jianshu.com/p/36d3e0e00157)
 
 [怎样删除npm里已经发布的包？](https://segmentfault.com/q/1010000009389901)

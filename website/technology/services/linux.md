@@ -1,1 +1,4 @@
-# Linux
+---
+layout: List
+categoryData: Linux
+---

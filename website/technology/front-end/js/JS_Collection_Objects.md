@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 1
-datetime: 2017-12-13
+datetime: '2017-12-13'
+category: JavaScript
 ---
 
 # 集合对象(Array、Map、Set)及类数组对象的使用与对比
@@ -522,7 +523,7 @@ let obj = {
 #### forEach
 
 ```js
-Array.prototype.forEach.call(obj, function(el, index){  
+Array.prototype.forEach.call(obj, function(el, index){
    console.log(index, ' => ', el)
 })
 ```
@@ -530,7 +531,7 @@ Array.prototype.forEach.call(obj, function(el, index){
 #### map
 
 ```js
-Array.prototype.map.call(obj, function(el, index){  
+Array.prototype.map.call(obj, function(el, index){
    console.log(index, ' => ', el)
 })
 ```
@@ -579,7 +580,7 @@ for (const s of str) {
 
 除了使用Array原型对象的方法，String还包含其他一些自己独有的方法:
 
-**与Array使用方法相同的方法** 
+**与Array使用方法相同的方法**
 
 搜索: indexOf()、lastIndexOf()、concat()
 
@@ -587,7 +588,7 @@ for (const s of str) {
 
 toLowerCase()、toUpperCase()
 
-#### 截取 
+#### 截取
 
 substr(start, len)
 
@@ -711,20 +712,20 @@ console.log(arr)
 
 ## 参考资料
 
-[JavaScript中的数组遍历forEach()与map()方法以及兼容写法介绍](http://www.jb51.net/article/84609.htm) 
+[JavaScript中的数组遍历forEach()与map()方法以及兼容写法介绍](http://www.jb51.net/article/84609.htm)
 
-[JS几种数组遍历方式以及性能分析对比](http://www.cnblogs.com/lvmh/p/6104397.html) 
+[JS几种数组遍历方式以及性能分析对比](http://www.cnblogs.com/lvmh/p/6104397.html)
 
-[JavaScript中的类数组对象介绍](http://www.jb51.net/article/59169.htm) 
+[JavaScript中的类数组对象介绍](http://www.jb51.net/article/59169.htm)
 
-[数组对象和类数组对象区别](http://blog.csdn.net/ailongyang/article/details/60466654) 
+[数组对象和类数组对象区别](http://blog.csdn.net/ailongyang/article/details/60466654)
 
-[js数组的操作指南](http://www.jb51.net/article/59084.htm) 
+[js数组的操作指南](http://www.jb51.net/article/59084.htm)
 
-[详谈js遍历集合(Array,Map,Set)](http://www.jb51.net/article/110487.htm) 
+[详谈js遍历集合(Array,Map,Set)](http://www.jb51.net/article/110487.htm)
 
-[JavaScript中的Map、Set及其遍历](http://www.cnblogs.com/weilan/p/7002088.html) 
+[JavaScript中的Map、Set及其遍历](http://www.cnblogs.com/weilan/p/7002088.html)
 
-[JavaScript创建Map对象](http://blog.csdn.net/mr__fang/article/details/42024535) 
+[JavaScript创建Map对象](http://blog.csdn.net/mr__fang/article/details/42024535)
 
-[slice,substr和substring的区别](http://www.cnblogs.com/littledu/archive/2011/04/18/2019475.html) 
+[slice,substr和substring的区别](http://www.cnblogs.com/littledu/archive/2011/04/18/2019475.html)

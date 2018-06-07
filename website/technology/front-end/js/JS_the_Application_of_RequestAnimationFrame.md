@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2017-12-15
+datetime: '2017-12-15'
+category: JavaScript
 ---
 
 # RequestAnimationFrame 的应用
@@ -41,10 +42,10 @@ btn.onclick = function(){
     timer = setInterval(function(){
         if(parseInt(myDiv.style.width) < 500){
             myDiv.style.width = parseInt(myDiv.style.width) + 5 + 'px';
-            myDiv.innerHTML =     parseInt(myDiv.style.width)/5 + '%';    
+            myDiv.innerHTML =     parseInt(myDiv.style.width)/5 + '%';
         }else{
             clearInterval(timer);
-        }        
+        }
     },16);
 }
 </script>
@@ -67,7 +68,7 @@ btn.onclick = function(){
             timer = setTimeout(fn,16);
         }else{
             clearTimeout(timer);
-        }    
+        }
     },16);
 }
 </script>
@@ -90,7 +91,7 @@ btn.onclick = function(){
             timer = requestAnimationFrame(fn);
         }else{
             cancelAnimationFrame(timer);
-        }    
+        }
     });
 }
 </script>
@@ -99,5 +100,5 @@ btn.onclick = function(){
 
 ## 参考资料
 
-[深入理解定时器系列第二篇——被誉为神器的requestAnimationFrame](http://www.cnblogs.com/xiaohuochai/p/5777186.html) 
+[深入理解定时器系列第二篇——被誉为神器的requestAnimationFrame](http://www.cnblogs.com/xiaohuochai/p/5777186.html)
 

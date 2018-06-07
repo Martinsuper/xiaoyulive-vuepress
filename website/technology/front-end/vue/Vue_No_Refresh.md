@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-06-06
+datetime: '2018-06-06'
+category: Vue
 ---
 
 # Vue 返回时不刷新页面
@@ -92,7 +93,7 @@ beforeMount
 mounted
 ```
 
-可以看出，整个生命周期完整执行，当跳转到其他页面的时候，组件被销毁，调用其 `destroy` 相关的生命周期函数。 
+可以看出，整个生命周期完整执行，当跳转到其他页面的时候，组件被销毁，调用其 `destroy` 相关的生命周期函数。
 
 
 ### 使用 keep-alive
@@ -144,7 +145,7 @@ updated
 
 ```html
 <keep-alive>
-  <router-view></router-view>  
+  <router-view></router-view>
 </keep-alive>
 ```
 
@@ -156,17 +157,17 @@ updated
 一种比较合适的方法是，直接在路由中进行配置 `meta.keepAlive`，这样真正做到了按需取之。
 
 ```js
-{  
-  name: 'index',  
-  path: '/index',  
-  title: '主页',  
-  component(resolve) {  
-    require(['views/index.vue'], resolve)  
-  },  
-  meta: {  
-    pageTitle: '主页',  
-    keepAlive: true  
-  }  
+{
+  name: 'index',
+  path: '/index',
+  title: '主页',
+  component(resolve) {
+    require(['views/index.vue'], resolve)
+  },
+  meta: {
+    pageTitle: '主页',
+    keepAlive: true
+  }
 }
 ```
 
@@ -178,11 +179,11 @@ updated
 export default {
   ...
   beforeRouteLeave (to, from, next) {
-    if (to.path == '/index') {  
+    if (to.path == '/index') {
       to.meta.keepAlive = true
-    } else {  
+    } else {
       to.meta.keepAlive = false
-    }  
+    }
     next()
   }
   ...

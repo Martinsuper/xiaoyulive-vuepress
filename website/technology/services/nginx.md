@@ -1,1 +1,4 @@
-# Nginx
+---
+layout: List
+categoryData: Nginx
+---

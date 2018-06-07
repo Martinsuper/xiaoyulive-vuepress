@@ -1,8 +1,4 @@
 ---
 layout: List
+categoryData: CSS
 ---
-
-# CSS
-
-
-

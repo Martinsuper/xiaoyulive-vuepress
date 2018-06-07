@@ -1,7 +1,8 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-05-28
+datetime: '2018-05-28'
+category: 开发笔记
 ---
 
 # 关于 npm 与 yarn 等一些 node 包管理工具的一些探索
@@ -181,7 +182,7 @@ npm 相关文档: [英文文档](https://docs.npmjs.com/cli/)
 
 局部安装
 
-- yarn: `yarn add package` 
+- yarn: `yarn add package`
 
 - yarn 添加开发依赖 `yarn add package --dev` 或 `yarn add package -D`
 
@@ -324,7 +325,7 @@ pnpm 的使用同 npm
 pnpm i foo
 ```
 
-[github 仓库地址](https://github.com/pnpm/pnpm) 
+[github 仓库地址](https://github.com/pnpm/pnpm)
 
 
 
@@ -368,12 +369,12 @@ node_modules
 今天安装 npm 依赖的时候，出现了 `write after end` 的错误，使用 yarn 没问题。查阅资料，解决方案如下:
 
 ```
-npm i -g npm@5.6.0  
+npm i -g npm@5.6.0
 ```
 
 npm 高于 5.6 的时候容易出现此问题，降低版本即可，但我到现在并未探索出问题的原因，或许是npm自身版本的问题。
 
-参考: 
+参考:
 
 https://github.com/npm/npm/issues/19989
 
