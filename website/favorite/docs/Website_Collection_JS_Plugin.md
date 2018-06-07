@@ -118,9 +118,33 @@ Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScrip
 
 ### Gulp
 
-![](@/img/logo/gulp.png =200x)
+![](@/img/logo/gulp.png =150x)
 
-[官网](https://www.gulpjs.com.cn/)
+[官网](https://gulpjs.com/)、[中文网](https://www.gulpjs.com.cn/)、[Plugins](https://gulpjs.com/plugins/)、[GitHub](https://github.com/gulpjs/gulp)、[awesome-gulp](https://github.com/alferov/awesome-gulp)、[npm](https://www.npmjs.com/package/gulp)
+
+[Gulp资料大全: 入门、插件、脚手架、包清单 - 知乎](https://zhuanlan.zhihu.com/p/20734615)
+
+[Gulp资料大全: 入门、插件、脚手架、包清单 - 博客园](https://www.cnblogs.com/-ding/p/5972162.html)
+
+相关插件
+
+[gulp-css-base64](https://github.com/zckrs/gulp-css-base64)
+
+[gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin)
+
+[gulp-less](https://github.com/stevelacy/gulp-less)
+
+[gulp-postcss](https://github.com/postcss/gulp-postcss)
+
+[gulp-uglify](https://github.com/terinjokes/gulp-uglify)
+
+[gulp-babel](https://github.com/babel/gulp-babel)
+
+[gulp-json-minify](https://github.com/cstuncsik/gulp-json-minify)
+
+[gulp-css-whitespace](https://www.npmjs.com/package/gulp-css-whitespace/)
+
+[gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean/)
 
 ### Grunt
 
@@ -142,7 +166,16 @@ Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScrip
 
 [官网](fis.baidu.com)、[GitHub](https://github.com/fex-team/fis3)
 
+
+### rollup
+
+![](@/img/logo/rollup.jpg =300x)
+
+[官网](https://rollupjs.org/guide/en)、[中文网](http://www.rollupjs.com/)
+
+
 ---
+
 
 ## 样式扩展语言
 
@@ -197,4 +230,21 @@ Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScrip
 
 [官网](http://handlebarsjs.com/)、[中文镜像 - BootCss](https://handlebars.BootCss.com/)、[GitHub](https://github.com/wycats/handlebars.js)
 
+
+---
+
+
+## 其他
+
+### ESLint
+
+![](@/img/logo/eslint.png =300x)
+
+[中文网](http://eslint.cn/)、[GitHub](https://github.com/eslint/eslint)、[npm](https://www.npmjs.com/package/eslint)、[rules](https://eslint.org/docs/rules/)、[standard](https://github.com/standard/standard/blob/master/docs/README-zhcn.md)
+
+### Babel
+
+![](@/img/logo/babel.png =300x)
+
+[官网](https://babeljs.io/)、[中文网](https://www.babeljs.cn/)、[GitHub](https://github.com/babel/babel)、[npm](https://www.npmjs.com/package/babel-core)
 
