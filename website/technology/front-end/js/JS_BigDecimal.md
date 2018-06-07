@@ -4,7 +4,7 @@ sidebarDepth: 2
 datetime: 2018-06-05
 ---
 
-# JS 大数处理
+# JavaScript 大数的处理
 
 ## 问题现象
 

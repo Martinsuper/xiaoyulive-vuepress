@@ -1,7 +1,7 @@
 ---
 sidebar: auto
 sidebarDepth: 2
-datetime: 2018-06-05
+datetime: 2017-12-15
 ---
 
 # 深入探索 XMLHttpRequest2
