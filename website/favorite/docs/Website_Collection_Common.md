@@ -32,11 +32,51 @@ datetime: 2018-06-06
 ---
 
 
-## 学习资料
+## 编程语言
+
+### PHP
+
+[PHP](https://secure.php.net/manual/zh/)、[PHP教程 - Runoob](http://www.runoob.com/php/php-tutorial.html)、[PHP教程 - w3cschool](https://www.w3cschool.cn/php/)
+
+[Composer](https://www.phpcomposer.com/)、[Packagist - Composer](https://pkg.phpcomposer.com/)、[Packagist](https://packagist.org/)、[Composer中文文档 - 看云](https://www.kancloud.cn/thinkphp/composer)
+
+### Python
+
+[Python3](https://docs.python.org/3/)、[FTP镜像](https://www.python.org/ftp/python/)
+
+### Node.js
+
+[Node.js](https://nodejs.org/zh-cn/)、[Node.js中文网](http://nodejs.cn/)、[Download](https://nodejs.org/en/download/)、[FTP镜像](https://npm.taobao.org/mirrors/node)
+
+[NPM](https://www.npmjs.com/)、[NPM中文文档](https://www.npmjs.com.cn/)
+
+[Yarn](https://yarnpkg.com/)、[Yarn中文网](https://yarnpkg.com/zh-Hans/)、[Yarn镜像 - BootCss](https://yarn.bootcss.com/)
+
+### Typescript
+
+[Typescript](https://www.tslang.cn/)、[Typescript - BootCss](https://typescript.bootcss.com/)、[TypeScript 入门教程](https://ts.xcatliu.com/)
 
 ### JavaScript
 
-[ECMAScript 6 入门 - 阮一峰](http://es6.ruanyifeng.com/)、[JavaScript Promise迷你书（中文版） - Gitbook](https://legacy.gitbook.com/book/wohugb/promise/details)
+[ECMAScript 6 入门 - 阮一峰](http://es6.ruanyifeng.com/)、[JavaScript Promise迷你书（中文版） - GitBook](https://legacy.gitbook.com/book/wohugb/promise/details)
+
+### Ruby
+
+[Ruby](http://www.ruby-lang.org/en/)、[RubyGems](https://rubygems.org/)、[Download RubyGems](https://rubygems.org/pages/download)、[RubyGems 镜像 - 淘宝网](https://ruby.taobao.org/)、[RubyGems 镜像 - Ruby China](http://gems.ruby-china.org/)、[Bundler](https://bundler.io/)
+
+[Windows 下 Ruby 使用国内 https 源时出现的 ssl 报错的解决办法](https://blog.csdn.net/ailurus_fulgens/article/details/54287621)
+
+[Windows 环境添加 Ruby China Gems 源的 SSL 异常问题解决记录](https://ruby-china.org/topics/33843)
+
+### Go
+
+[Go](https://golang.org)
+
+
+---
+
+
+## 学习资料
 
 ### 资料与手册
 
@@ -79,17 +119,18 @@ datetime: 2018-06-06
 
 ---
 
+
 ## 开源系统
 
 ### 博客系统
 
-[Hexo](https://hexo.io/)、[中文镜像 - Bootcss](https://hexo.bootcss.com/)、[GitHub](https://github.com/hexojs/hexo)
+**Hexo相关**: [Hexo](https://hexo.io/)、[中文镜像 - Bootcss](https://hexo.bootcss.com/)、[GitHub](https://github.com/hexojs/hexo)
 
-[Jekyll](https://jekyllrb.com/)、[中文镜像 - Bootcss](https://www.jekyll.com.cn/)、[GitHub](https://github.com/jekyll/jekyll)
+**Jekyll相关**: [Jekyll](https://jekyllrb.com/)、[中文镜像 - Bootcss](https://www.jekyll.com.cn/)、[GitHub](https://github.com/jekyll/jekyll)
 
-[Vuepress](https://vuepress.vuejs.org/)、[中文镜像 - Bootcss](https://www.vuepress.cn/)、[GitHub](https://github.com/vuejs/vuepress)
+**Vuepress相关**: [Vuepress](https://vuepress.vuejs.org/)、[中文镜像 - Bootcss](https://www.vuepress.cn/)、[GitHub](https://github.com/vuejs/vuepress)
 
-[WordPress](https://wordpress.org)、[Download](https://wordpress.org/download/)
+**WordPress相关**: [WordPress](https://wordpress.org)、[Download](https://wordpress.org/download/)
 
-[Emlog](http://www.emlog.net/)
+**Emlog相关**: [Emlog](http://www.emlog.net/)
 
