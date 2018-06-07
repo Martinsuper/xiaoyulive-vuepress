@@ -35,7 +35,6 @@ module.exports = {
           { text: '学无止境', link: '/technology/' },
           { text: '开发笔记', link: '/notes/' },
           { text: '收藏夹', link: '/favorite/' },
-          // { text: '测试', link: '/test/' },
           { text: '书籍', link: 'https://www.kancloud.cn/@xiaoyulive' },
           { text: '博客', link: 'http://blog.xiaoyulive.top/' },
           { text: 'GitHub', link: 'https://github.com/quanzaiyu' }
@@ -56,6 +55,7 @@ module.exports = {
     }
   },
   markdown: {
+    lineNumbers: true,
     anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '$' },
     toc: { includeLevel: [1, 2, 3] },
     config: md => {

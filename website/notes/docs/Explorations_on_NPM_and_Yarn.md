@@ -8,7 +8,7 @@ datetime: 2018-05-28
 
 ## npm
 
-npm是Node.js能够如此成功的主要原因之一。npm团队做了很多的工作，以确保npm保持向后兼容，并在不同的环境中保持一致[^1]。
+npm是Node.js能够如此成功的主要原因之一。npm团队做了很多的工作，以确保npm保持向后兼容，并在不同的环境中保持一致。
 
 npm是围绕着 [语义版本控制（semver）](http://semver.org/) 的思想而设计的，下面是从他们的网站摘抄过来的：
 
@@ -214,7 +214,7 @@ npm 的缓存目录是通过 cache 变量指定的，一般默认是在 `~/.npm`
 
 ---
 
-[npm cache](https://docs.npmjs.com/cli/cache)[^2] 提供了三个命令，分别是 `npm cache add`, `npm cache clean`, `npm cache verify`。
+[npm cache](https://docs.npmjs.com/cli/cache) 提供了三个命令，分别是 `npm cache add`, `npm cache clean`, `npm cache verify`。
 
 - `npm cache add` 官方解释说这个命令主要是 npm 内部使用，但是也可以用来手动给一个指定的 package 添加缓存。
 
@@ -306,7 +306,7 @@ npm install -g yarn
 
 ## pnpm
 
-[pnpm](https://github.com/pnpm/pnpm)[^3] 是又一个 Node.js 包管理工具。它可以替换 npm， 而且 npm 更快更高效。
+[pnpm](https://github.com/pnpm/pnpm) 是又一个 Node.js 包管理工具。它可以替换 npm， 而且 npm 更快更高效。
 
 能有多快? *3 倍！* 可以在[这里](https://github.com/pnpm/node-package-manager-benchmark) 查看 benchmarks 。
 
@@ -382,15 +382,15 @@ https://github.com/npm/npm/issues/19989
 
 ## 参考资料
 
-[^1]: [CSDN: 一文看懂npm、yarn、pnpm之间的区别](https://blog.csdn.net/qiansg123/article/details/80129453)
+[CSDN: 一文看懂npm、yarn、pnpm之间的区别](https://blog.csdn.net/qiansg123/article/details/80129453)
 
-[^2]: [segmentFault: npm 和 yarn 缓存策略对比](https://segmentfault.com/a/1190000009709213)
+[segmentFault: npm 和 yarn 缓存策略对比](https://segmentfault.com/a/1190000009709213)
 
-[^3]: [为什么我们应该使用 pnpm（译）](https://segmentfault.com/a/1190000013214927)
+[为什么我们应该使用 pnpm（译）](https://segmentfault.com/a/1190000013214927)
 
-[^4]: [NPM本地缓存方案](http://ju.outofmemory.cn/entry/64247)
+[NPM本地缓存方案](http://ju.outofmemory.cn/entry/64247)
 
-[^5]: [Yarn vs npm: 你需要知道的一切](http://web.jobbole.com/88459/)
+[Yarn vs npm: 你需要知道的一切](http://web.jobbole.com/88459/)
 
 [yarn初学](https://www.cnblogs.com/dapenglalala/p/6511557.html)
 

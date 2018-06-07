@@ -1,0 +1,1 @@
+ 101.200.101.42 - - [16/Nov/2017:22:08:42 +0800] "GET / HTTP/1.1" 200 188 280 "-" "curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2" "xiaoyulive.oss-cn-beijing.aliyuncs.com" "5A0D9BE9483412FB518579FF" "true" "-" "GetObject" "xiaoyulive" "index.html" 188 21 "-" 616 "1713938831368082" - "cdn" "-"
