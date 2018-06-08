@@ -240,6 +240,22 @@ function documentFilter (filters) {
   })
 }
 
+function generateCates () {
+  let cates = {}
+  this.$site.pages.forEach(category => {
+    if (category.frontmatter.category) {
+      let cate = category.frontmatter.category
+      if (!cates[cate]) {
+        cates[cate] = []
+        cates[cate].push(category)
+      } else {
+        cates[cate].push(category)
+      }
+    }
+  })
+  return cates
+}
+
 export default {
   installArr: [{
     name: '$ensureExt',
@@ -247,6 +263,9 @@ export default {
   }, {
     name: '$documentFilter',
     func: documentFilter
+  }, {
+    name: '$generateCates',
+    func: generateCates
   }],
   install: function (_Vue) {
     this.installArr.forEach(item => {

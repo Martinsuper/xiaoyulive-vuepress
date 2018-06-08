@@ -11,8 +11,9 @@
       Sidebar(:items="sidebarItems" @toggle-sidebar="toggleSidebar")
         slot(name="sidebar-top" slot="top")
         slot(name="sidebar-bottom" slot="bottom")
-    .custom-layout(v-if="$page.frontmatter.layout")
-      component(:is="$page.frontmatter.layout")
+    keep-alive(v-if="$page.frontmatter.layout")
+      .custom-layout
+        component(:is="$page.frontmatter.layout")
     keep-alive(v-else-if="$page.frontmatter.home")
       Home
     keep-alive(v-else)
@@ -98,8 +99,8 @@ export default {
   },
 
   mounted () {
+    Vue.prototype['$categories'] = this.$generateCates()
     window.addEventListener('scroll', this.onScroll)
-
     // configure progress bar
     nprogress.configure({ showSpinner: true })
 
